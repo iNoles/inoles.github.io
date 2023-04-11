@@ -17,6 +17,4 @@ jobs:
           CI: false
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: public # The folder the action should deploy.
+        uses: enriikke/gatsby-gh-pages-action@v2
