@@ -18,3 +18,5 @@ jobs:
 
       - name: Deploy 🚀
         uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
