@@ -95,7 +95,7 @@ const config: GatsbyConfig = {
       {
         name: 'Other',
         description:
-          'CI / CD (Github Actions), Android, iOS, Xamarin, Flutter',
+          'CI / CD (Github Actions), Android, iOS, Xamarin, Flutter, Agile',
       },
     ],
   },
