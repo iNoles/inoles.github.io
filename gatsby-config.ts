@@ -45,6 +45,11 @@ const config: GatsbyConfig = {
         link: 'https://github.com/iNoles/TaskList',
       },
       {
+        name: "Tip Calculator",
+        description: "Calculate Tips built with MAUI in C#",
+        link: 'https://github.com/iNoles/TipCalcuator'
+      },
+      {
         name: 'RSSReader',
         description:
           'An open-source RSS Reader built by React and TailwindCSS',
