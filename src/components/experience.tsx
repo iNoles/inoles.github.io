@@ -1,9 +1,10 @@
 import React from 'react';
 import Section from './section';
 import SummaryItem from './summaryItem';
+import { ReturnValue } from '../site-metadata';
 
-const SectionExperience = ({ site }: ReturnValue) => {
-  const experience = site.siteMetadata.experience
+const SectionExperience = ({ allWorkHistoryYaml }: ReturnValue) => {
+  const experience = allWorkHistoryYaml?.nodes ?? [];
   if (!experience.length) return null;
 
   return (

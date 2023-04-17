@@ -8,16 +8,17 @@ import SectionProjects from '../components/project';
 import SectionSkills from '../components/skills';
 import { SEO } from '../components/seo';
 import SectionEducation from '../components/education';
+import { ReturnValue } from '../site-metadata';
 
 const Index = ({ data } : PageProps<ReturnValue>) => {
   return (
     <Layout>
       <Header site={data.site} />
       <SectionAbout site={data.site} />
-      <SectionProjects site={data.site} />
-      <SectionEducation site={data.site} />
-      <SectionExperience site={data.site} />
-      <SectionSkills site={data.site} />
+      <SectionProjects allProjectsYaml={data.allProjectsYaml} />
+      <SectionEducation allEducationsYaml={data.allEducationsYaml} />
+      <SectionExperience allWorkHistoryYaml={data.allWorkHistoryYaml} />
+      <SectionSkills allSkillsYaml={data.allSkillsYaml} />
     </Layout>
   );
 };
@@ -39,25 +40,32 @@ export const pageQuery = graphql`
         twitter
         github
         linkedin
-        projects {
-          name
-          description
-          link
-        }
-        education {
-          id
-          name
-          description
-        }
-        experience {
-          name
-          description
-          link
-        }
-        skills {
-          name
-          description
-        }
+      }
+    }
+    allProjectsYaml {
+      nodes {
+        description
+        link
+        name
+      }
+    }
+    allEducationsYaml {
+      nodes {
+        id
+        name
+        description
+      }
+    }
+    allWorkHistoryYaml {
+      nodes {
+        name
+        description
+      }
+    }
+    allSkillsYaml {
+      nodes {
+        name
+        description
       }
     }
   }

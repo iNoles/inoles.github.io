@@ -1,9 +1,10 @@
 import React from 'react';
 import Section from './section';
 import SummaryItem from './summaryItem';
+import { ReturnValue } from '../site-metadata';
 
-const SectionEducation = ({ site }: ReturnValue) => {
-  const education = site.siteMetadata.education
+const SectionEducation = ({ allEducationsYaml }: ReturnValue) => {
+  const education = allEducationsYaml?.nodes ?? [];
   if (!education.length) return null;
 
   return (

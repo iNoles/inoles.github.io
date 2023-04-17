@@ -1,5 +1,5 @@
-type ReturnValue = {
-    site: {
+export type ReturnValue = {
+    site?: {
       siteMetadata: {
         about: string,
         twitter?: string,
@@ -7,10 +7,34 @@ type ReturnValue = {
         github?: string,
         linkedin?: string,
         description: string,
-        projects: {name: string, description: string, link: string}[],
-        experience: {name: string, description: string, link: string}[],
-        skills: {name: string, description: string}[],
-        education: {id: number, name: string, description: string, link: string}[]
-      }
+      },
+    },
+    allProjectsYaml ?: {
+      nodes: {
+        description: string,
+        name: string,
+        link ?: string
+      }[]
+    },
+    allEducationsYaml ?: {
+      nodes: {
+        id: number,
+        description: string,
+        name: string,
+        link ?: string
+      }[]
+    }
+    allWorkHistoryYaml ?: {
+      nodes: {
+        description: string,
+        name: string,
+        link ?: string
+      }[]
+    },
+    allSkillsYaml ?: {
+      nodes: {
+        description: string,
+        name: string,
+      }[]
     }
   }

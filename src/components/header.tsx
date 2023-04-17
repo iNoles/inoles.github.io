@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import profileImg from '../images/profile.jpg';
+import { ReturnValue } from '../site-metadata';
 
 const classes = {
   wrapper: 'block mb-6 md:flex',
@@ -17,7 +18,7 @@ const classes = {
 };
 
 const Header = ({ site } : ReturnValue) => {
-  const { siteMetadata } = site;
+  const siteMetadata = site?.siteMetadata!!;
 
   return (
     <div className={classes.wrapper}>

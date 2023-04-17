@@ -1,13 +1,10 @@
 import React from 'react';
 import Section from './section';
 import SummaryItem from './summaryItem';
+import { ReturnValue } from '../site-metadata';
 
-interface ProjectsType {
-  projects: {name: string, description: string, link: string}[]
-}
-
-const SectionProjects = ({ site }: ReturnValue) => {
-  const projects = site.siteMetadata.projects;
+const SectionProjects = ({ allProjectsYaml }: ReturnValue) => {
+  var projects = allProjectsYaml?.nodes ?? [];
   if (!projects.length) return null;
 
   return (

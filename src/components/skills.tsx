@@ -1,9 +1,10 @@
 import React from 'react';
 import Section from './section';
 import SummaryItem from './summaryItem';
+import { ReturnValue } from '../site-metadata';
 
-const SectionSkills = ({ site }: ReturnValue) => {
-  const skills = site.siteMetadata.skills;
+const SectionSkills = ({ allSkillsYaml }: ReturnValue) => {
+  const skills = allSkillsYaml?.nodes ?? [];
   return (
     <Section title="Skills">
       {skills.map((skill) => (
