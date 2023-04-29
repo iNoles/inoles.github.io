@@ -1,6 +1,6 @@
-- name: SpaceXLaunch
-  description: Kotlin Multiplatforms app based on JetBrains Compose, SwiftUI, and Jetpack Compose
-  link: https://github.com/iNoles/SpaceXLaunch
+- name: SpaceXLaunch-KMP
+  description: It is a Kotlin Mulitplatform app to check latest and upcoming launches by SpaceX API. 
+  link: https://github.com/iNoles/SpaceXLaunch-KMP
 
 - name: KnightFootball-Android
   description: It is a fan-made Android app based on Kotlin with Jetpack Compose about UCF Football
