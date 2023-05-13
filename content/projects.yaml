@@ -1,5 +1,5 @@
 - name: SpaceXLaunch-KMP
-  description: It is a Kotlin Mulitplatform app to check latest and upcoming launches by SpaceX API. 
+  description: SpaceX Launch is a simple app that allows you to see upcoming and latest launches. It is built using Kotlin Multiplatform, so it works on Android, iOS, and Desktops.
   link: https://github.com/iNoles/SpaceXLaunch-KMP
 
 - name: KnightFootball-Android
