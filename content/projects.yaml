@@ -1,5 +1,5 @@
 - name: SpaceXLaunch-KMP
-  description: SpaceX Launch is a simple app that allows you to see upcoming and latest launches. It is built using Kotlin Multiplatform, so it works on Android, iOS, and Desktops.
+  description: SpaceX Launch is a simple app that allows you to see upcoming and latest launches. It is built using Compose Multiplatform, so it works on Android, iOS, and Desktops.
   link: https://github.com/iNoles/SpaceXLaunch-KMP
 
 - name: KnightFootball-Android
@@ -21,3 +21,7 @@
 - name: RSSReader
   description: An open-source RSS Reader built by React and TailwindCSS
   link: https://inoles.github.io/rss_reader
+
+- name: News
+  description: News App is a simple news app 🗞️ which uses NewsAPI to fetch top news headlines with different catalogs from the API. It is built using Compose Multiplatform, so it works on Android, iOS, and Desktops.
+  link: https://github.com/iNoles/News
