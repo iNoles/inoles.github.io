@@ -17,7 +17,7 @@ const config: GatsbyConfig = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/jonathan-steele/`,
     // Content of the About Me section
-    about: `I'm a motivated Junior Software Developer with experience building and scaling mobile applications and technical support. I'm also passionate about open-source contributors, working in high-impact environments, and contributing to growing development teams by helping build great products.`
+    about: `I'm a motivated Software Developer with experience building and scaling mobile applications and technical support. I'm also passionate about open-source contributors, working in high-impact environments, and contributing to growing development teams by helping build great products.`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
