@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import profileImg from '../images/profile.jpg';
-import resume from '../data/resume.pdf';
+import resume from '../resume.pdf';
 
 import { ReturnValue } from '../site-metadata';
 
