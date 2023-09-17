@@ -25,3 +25,7 @@
 - name: News
   description: News App is a simple news app 🗞️ which uses NewsAPI to fetch top news headlines with different catalogs from the API. It is built using Compose Multiplatform, so it works on Android, iOS, and Desktops.
   link: https://github.com/iNoles/News
+
+- name: HackerNews
+  description: Convert a .NET MAUI app that displays top posts on Hacker News, leveraging C# 8.0's IAsyncEnumerable for enhanced performance and responsiveness while utilizing the Firebase Realtime Database REST API.
+  link: https://github.com/iNoles/HackerNews
