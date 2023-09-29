@@ -17,7 +17,7 @@ const config: GatsbyConfig = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/jonathan-steele/`,
     // Content of the About Me section
-    about: `Experienced Software Developer known for optimizing codebases, leading cross-functional teams, and delivering top-rated mobile apps. Seeking innovative opportunities to contribute expertise in a dynamic environment.`
+    about: `Experienced software developer with a 4.7-star app store rating on iOS and Android. Improved app performance by 30% and reduced project timelines by 15%. Enhanced team productivity by 20% with Python scripting. Committed to achieving results.`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
