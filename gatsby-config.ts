@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
     // Optional: Github account URL
     github: `https://github.com/inoles`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/jonathan-steele/`,
+    linkedin: ``,
     // Content of the About Me section
     about: `Experienced software developer with a 4.7-star app store rating on iOS and Android. Improved app performance by 30% and reduced project timelines by 15%. Enhanced team productivity by 20% with Python scripting. Committed to achieving results.`
   },
