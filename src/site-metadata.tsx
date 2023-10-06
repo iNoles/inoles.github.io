@@ -2,7 +2,6 @@ export type ReturnValue = {
     site?: {
       siteMetadata: {
         about: string,
-        twitter?: string,
         name: string,
         github?: string,
         linkedin?: string,

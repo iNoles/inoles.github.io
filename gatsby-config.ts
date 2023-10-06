@@ -10,8 +10,6 @@ const config: GatsbyConfig = {
     title: `Jonathan Steele | Software Developer`,
     // Description that goes under your name in main bio
     description: `Software Developer from Florida`,
-    // Optional: Twitter account handle
-    twitter: ``,
     // Optional: Github account URL
     github: `https://github.com/inoles`,
     // Optional: LinkedIn account URL
