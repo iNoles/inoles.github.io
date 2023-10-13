@@ -2,7 +2,6 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import profileImg from '../images/profile.jpg';
-import resume from '../resume.pdf';
 
 import { ReturnValue } from '../site-metadata';
 
@@ -49,11 +48,6 @@ const Header = ({ site } : ReturnValue) => {
               </a>
             </li>
           )}
-          <li className={classes.item}>
-              <a className={classes.link} href={resume}>
-                Resume
-              </a>
-            </li>
         </ul>
       </div>
     </div>
