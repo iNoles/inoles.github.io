@@ -12,6 +12,7 @@ const SectionEducation = ({ allEducationsYaml }: ReturnValue) => {
       {education.map((item) => (
         <SummaryItem
           key={item.id}
+          date={item.date}
           name={item.name}
           description={item.description}
           link={item.link}

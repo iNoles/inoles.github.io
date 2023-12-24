@@ -12,6 +12,7 @@ const SectionProjects = ({ allProjectsYaml }: ReturnValue) => {
       {projects.map((project) => (
         <SummaryItem
           key={project.name}
+          date={project.date}
           name={project.name}
           description={project.description}
           link={project.link}

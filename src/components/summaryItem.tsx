@@ -4,17 +4,19 @@ import React from 'react';
 const classes = {
   wrapper: 'mb-6',
   name: 'font-semibold text-gray-900 dark:text-white pb-1',
+  date: 'italic text-gray-600 pb-1',
   description: 'text-md text-gray-600 dark:text-gray-200 font-light',
 };
 
 interface SummaryItemTypes {
   name: string
+  date?: string
   description: string
   link?: string
   internal?: boolean
 }
 
-const SummaryItem = ({ name, description, link = "", internal = false }: SummaryItemTypes) => {
+const SummaryItem = ({ name, date = "", description, link = "", internal = false }: SummaryItemTypes) => {
   let linkContent;
   if (internal) {
     linkContent = <Link to={link}>{name}</Link>;
@@ -31,6 +33,7 @@ const SummaryItem = ({ name, description, link = "", internal = false }: Summary
       >
         {link ? linkContent : name}
       </h3>
+      {date && <h3 className={classes.date}>{date}</h3>}
       <p className={classes.description}>{description}</p>
     </div>
   );

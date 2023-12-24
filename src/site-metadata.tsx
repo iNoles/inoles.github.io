@@ -11,6 +11,7 @@ export type ReturnValue = {
     allProjectsYaml ?: {
       nodes: {
         description: string,
+        date ?: string,
         name: string,
         link ?: string
       }[]
@@ -19,6 +20,7 @@ export type ReturnValue = {
       nodes: {
         id: number,
         description: string,
+        date: string,
         name: string,
         link ?: string
       }[]
