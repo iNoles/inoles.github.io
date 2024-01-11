@@ -1,3 +1,4 @@
+---
 name: Run Gradle PR
 on: [pull_request]
 
