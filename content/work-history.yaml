@@ -1,15 +1,19 @@
 - name: eLifeguard.com
-  description: Software Developer, MAR 2016 - Present
+  date: March 2016 - Present
+  description: Software Developer
   link:
 
 - name: Brevard County Public Schools
-  description: IT Support Intern, AUG 2022 - OCT 2022
+  date: August 2022 - October 2022
+  description: Information Technology Specialist Intern
   link:
 
 - name: Innovative Routines International
-  description: Software Tester Intern, JUL 2015 - OCT 2015
+  date: July 2015 - October 2015
+  description: Software Tester Intern
   link:
 
 - name: The Computer Repair Zone
-  description: Computer Repair Technician, MAR 2013 - MAY 2013
+  date: March 2013 - May 2013
+  description: Computer Repair Technician
   link:

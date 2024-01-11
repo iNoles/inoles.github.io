@@ -10,8 +10,8 @@ const classes = {
 
 interface SummaryItemTypes {
   name: string
-  date?: string
   description: string
+  date ?: string,
   link?: string
   internal?: boolean
 }
@@ -33,7 +33,7 @@ const SummaryItem = ({ name, date = "", description, link = "", internal = false
       >
         {link ? linkContent : name}
       </h3>
-      {date && <h3 className={classes.date}>{date}</h3>}
+      {date ? <h3 className={classes.date}>{date}</h3> : ''}
       <p className={classes.description}>{description}</p>
     </div>
   );

@@ -24,7 +24,6 @@ const SectionAbout = ({ site }: ReturnValue, extended = false, resumeLink = "") 
           </>
         )}
       </div>
-      <hr></hr>
     </Section>
   );
 };

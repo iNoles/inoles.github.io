@@ -53,12 +53,14 @@ export const pageQuery = graphql`
         id
         name
         description
+        date
       }
     }
     allWorkHistoryYaml {
       nodes {
         name
         description
+        date
       }
     }
     allSkillsYaml {
