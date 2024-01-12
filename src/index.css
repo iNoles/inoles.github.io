@@ -3,14 +3,12 @@
 @tailwind utilities;
 
 @layer utilities {
-  @responsive {
-    .max-w-150 {
-      max-width: 150px;
-    }
+  .max-w-150 {
+    max-width: 150px;
+  }
 
-    .top-5 {
-      top: 5%;
-    }
+  .top-5 {
+    top: 5%;
   }
 }
 
