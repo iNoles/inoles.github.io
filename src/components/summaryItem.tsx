@@ -4,7 +4,7 @@ import React from 'react';
 const classes = {
   wrapper: 'mb-6',
   name: 'font-semibold text-gray-900 dark:text-white pb-1',
-  date: 'italic text-gray-600 pb-1',
+  date: 'italic text-gray-600 dark:text-gray-300 pb-1',
   description: 'text-md text-gray-600 dark:text-gray-200 font-light',
 };
 
