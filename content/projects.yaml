@@ -16,7 +16,7 @@
   link: https://github.com/iNoles/TaskList
 
 - name: Tip Calculator
-  description: Calculate Tips built with MAUI in C#
+  description: A simple cross-platform tip calculator built with .NET MAUI, allowing users to calculate tips easily.
   link: https://github.com/iNoles/TipCalcuator
 
 - name: RSSReader
@@ -30,3 +30,7 @@
 - name: HackerNews
   description: Convert a .NET MAUI app that displays top posts on Hacker News, leveraging C# 8.0's IAsyncEnumerable for enhanced performance and responsiveness while utilizing the Firebase Realtime Database REST API.
   link: https://github.com/iNoles/HackerNews
+
+- name: Bank Account
+  description: This C++ Bank Account project is a simple implementation of a basic banking system. It provides a set of features commonly found in a typical bank and saving account, such as deposit, withdrawal, and balance inquiry.
+  link: https://github.com/iNoles/bank_account
