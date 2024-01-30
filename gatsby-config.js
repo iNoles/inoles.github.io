@@ -7,7 +7,7 @@ module.exports = {
     // Your Name
     name: 'Jonathan Steele',
     // Main Site Title
-    title: 'Jonathan Steele | Software Developer',
+    title: 'Jonathan Steele | Software Engineer',
     // Description that goes under your name in main bio
     description: 'Software Developer from Florida',
     // Optional: Github account URL
@@ -15,7 +15,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: 'https://www.linkedin.com/in/jonathan-steele',
     // Content of the About Me section
-    about: 'Experienced software developer with a 4.7-star app store rating on iOS and Android. Improved app performance by 30% and reduced project timelines by 15%. Enhanced team productivity by 20% with Python scripting. Committed to achieving results.'
+    about: 'Experienced Full Stack Software Engineer with a 4.7-star app store rating on iOS and Android. Improved app performance by 30% and reduced project timelines by 15%. Enhanced team productivity by 20% with Python scripting. Committed to achieving results.'
   },
   plugins: [
     'gatsby-plugin-postcss',
