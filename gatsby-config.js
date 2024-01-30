@@ -9,7 +9,7 @@ module.exports = {
     // Main Site Title
     title: 'Jonathan Steele | Software Engineer',
     // Description that goes under your name in main bio
-    description: 'Software Developer from Florida',
+    description: 'Software Engineer from Florida',
     // Optional: Github account URL
     github: 'https://github.com/inoles',
     // Optional: LinkedIn account URL
