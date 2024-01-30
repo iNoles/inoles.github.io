@@ -15,7 +15,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: 'https://www.linkedin.com/in/jonathan-steele',
     // Content of the About Me section
-    about: 'Experienced Full Stack Software Engineer with a 4.7-star app store rating on iOS and Android. Improved app performance by 30% and reduced project timelines by 15%. Enhanced team productivity by 20% with Python scripting. Committed to achieving results.'
+    about: 'Versatile Full Stack Software Engineer with expertise in front-end and back-end development. Proven ability to design and deliver robust, scalable solutions. Proficient in diverse technologies, committed to staying current, and adept at problem-solving in collaborative environments.'
   },
   plugins: [
     'gatsby-plugin-postcss',
