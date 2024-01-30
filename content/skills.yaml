@@ -1,9 +1,9 @@
 ---
 - name: Languages & Frameworks
-  description: JavaScript (ES6+), Dart, Typescript, Node.js, React, Java, Kotlin, Objective-C, C#, Swift
+  description: Java, Kotlin, Swift, Objective-C, C#, JavaScript (ES6+), Typescript, Dart, Node.js, C++
 
 - name: Databases
-  description: MongoDB, PostgreSQL, MySQL, SQLite
+  description: PostgreSQL, MySQL, SQLite
 
 - name: Other
   description: CI / CD (Github Actions), Android, iOS, Xamarin, Flutter, Agile
