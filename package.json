@@ -29,7 +29,7 @@
   "devDependencies": {
     "@types/node": "20.11.26",
     "@types/react": "18.2.65",
-    "@types/react-dom": "18.2.21",
+    "@types/react-dom": "18.2.22",
     "gh-pages": "6.1.1",
     "postcss": "8.4.35",
     "prettier": "3.2.5",
