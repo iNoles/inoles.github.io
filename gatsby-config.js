@@ -15,7 +15,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: 'https://www.linkedin.com/in/jonathan-steele',
     // Content of the About Me section
-    about: 'Versatile Full Stack Software Engineer with expertise in front-end and back-end development. Proven ability to design and deliver robust, scalable solutions. Proficient in diverse technologies, committed to staying current, and adept at problem-solving in collaborative environments.'
+    about: 'Versatile Software Engineer with expertise in mobile and desktop development. Proven ability to design and deliver robust, scalable solutions. Proficient in diverse technologies, committed to staying current, and adept at problem-solving in collaborative environments.'
   },
   plugins: [
     'gatsby-plugin-postcss',
