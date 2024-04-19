@@ -1,20 +1,39 @@
 import React from 'react';
 import Section from './section';
 import SummaryItem from './summaryItem';
-import { ReturnValue } from '../site-metadata';
+import { graphql, useStaticQuery } from 'gatsby';
 
-const SectionProjects = ({ allProjectsYaml }: ReturnValue) => {
-  var projects = allProjectsYaml?.nodes ?? [];
-  if (!projects.length) return null;
-
+const SectionProjects = () => {
+  const projectData = useStaticQuery(graphql`
+  query {
+    githubData {
+      data {
+        user {
+          repositories {
+            edges {
+              node {
+                description
+                name
+                url
+                stargazers {
+                  totalCount
+                }
+                forkCount
+              }
+            }
+          }
+        }
+      }
+    }
+  }`);
   return (
     <Section title="Projects">
-      {projects.map((project) => (
+      {projectData.githubData.data.user.repositories.edges.map((project) => (
         <SummaryItem
-          key={project.name}
-          name={project.name}
-          description={project.description}
-          link={project.link}
+          key={project.node.name}
+          name={project.node.name}
+          description={project.nodes.description}
+          link={project.url}
         />
       ))}
     </Section>

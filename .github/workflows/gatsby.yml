@@ -63,6 +63,7 @@ jobs:
         run: npm ci
       - name: Build with Gatsby
         env:
+          GATSBY_PORTFOLIO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PREFIX_PATHS: 'true'
         run: npm run build
       - name: Upload artifact

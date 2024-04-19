@@ -15,7 +15,7 @@ const Index = ({ data } : PageProps<ReturnValue>) => {
     <Layout>
       <Header site={data.site} />
       <SectionAbout site={data.site} />
-      <SectionProjects allProjectsYaml={data.allProjectsYaml} />
+      <SectionProjects />
       <SectionEducation allEducationsYaml={data.allEducationsYaml} />
       <SectionExperience allWorkHistoryYaml={data.allWorkHistoryYaml} />
       <SectionSkills allSkillsYaml={data.allSkillsYaml} />
@@ -39,13 +39,6 @@ export const pageQuery = graphql`
         about
         github
         linkedin
-      }
-    }
-    allProjectsYaml {
-      nodes {
-        description
-        link
-        name
       }
     }
     allEducationsYaml {

@@ -8,13 +8,6 @@ export type ReturnValue = {
         description: string
       },
     },
-    allProjectsYaml ?: {
-      nodes: {
-        description: string,
-        name: string,
-        link ?: string
-      }[]
-    },
     allEducationsYaml ?: {
       nodes: {
         id: number,
