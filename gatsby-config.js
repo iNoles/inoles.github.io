@@ -62,8 +62,8 @@ module.exports = {
   
         // variables: defaults to variables needed for a search query
         variables: {
-          "userFirst": 8,
-          "author": "iNoles"
+          'userFirst': 8,
+          'author': 'iNoles'
         }
       }
     }
