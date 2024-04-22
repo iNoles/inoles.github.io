@@ -36,11 +36,10 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-github-api`,
+      resolve: 'gatsby-source-github-api',
       options: {
         // token: required by the GitHub API
         token: `${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
-  
         // GraphQLquery: defaults to a search query
         graphQLQuery: `query ($author: String = "", $userFirst: Int = 0) {
           user(login: $author) {
@@ -59,11 +58,10 @@ module.exports = {
             }
           }
         }`,
-  
         // variables: defaults to variables needed for a search query
         variables: {
-          'userFirst': 8,
-          'author': 'iNoles'
+          userFirst: 8,
+          author: 'iNoles'
         }
       }
     }
