@@ -21,5 +21,7 @@ jobs:
         npm install
 
     - name: Build
+      env:
+          GATSBY_PORTFOLIO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         npm build
