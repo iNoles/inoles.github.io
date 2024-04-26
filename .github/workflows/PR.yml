@@ -19,9 +19,7 @@ jobs:
     - name: Install node modules
       run: |
         npm install
-
-    - name: Build
+    - name: Build with Gatsby
       env:
           GATSBY_PORTFOLIO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        npm build
+      run: npm run build
