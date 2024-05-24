@@ -6,9 +6,7 @@ import { ReturnValue } from '../site-metadata';
 const SectionExperience = ({ allWorkHistoryYaml }: ReturnValue) => {
   const experience = allWorkHistoryYaml?.nodes ?? [];
   if (!experience.length) return null;
-
-  console.log(experience[0].date);
-
+  
   return (
     <Section title="Experience">
       {experience.map((item) => (
