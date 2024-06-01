@@ -13,7 +13,7 @@ module.exports = {
     // Optional: Github account URL
     github: 'https://github.com/inoles',
     // Optional: LinkedIn account URL
-    linkedin: 'https://www.linkedin.com/in/jonathan-steele',
+    linkedin: 'https://www.linkedin.com/in/jonathansoftwaredeveloper',
     // Content of the About Me section
     about: 'Versatile Software Engineer with expertise in mobile and desktop development. Proven ability to design and deliver robust, scalable solutions. Proficient in diverse technologies, committed to staying current, and adept at problem-solving in collaborative environments.'
   },
