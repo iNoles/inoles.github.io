@@ -3,7 +3,7 @@
   description: Java, Kotlin, Swift, Objective-C, C#, JavaScript (ES6+), Typescript, Dart, C++
 
 - name: Frameworks
-  description: React, .NET Core, .NET MAUI, ASP.NET
+  description: Jetpack Compose, React, .NET Core, .NET MAUI, ASP.NET
 
 - name: Databases
   description: PostgreSQL, MySQL, SQLite
