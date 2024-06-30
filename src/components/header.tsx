@@ -25,7 +25,7 @@ const Header = ({ site } : ReturnValue) => {
     <div className={classes.wrapper}>
       <div className={classes.imageWrapper}>
         <Link to="/">
-          <img className={classes.image} src={profileImg} alt={siteMetadata.name} />
+          <img className={classes.image} src={profileImg} width="150" height="150" alt={siteMetadata.name} />
         </Link>
       </div>
       <div className={classes.contentWrapper}>
