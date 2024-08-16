@@ -4,12 +4,12 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  darkMode: "media",
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'media',
   theme: {
     extend: {
       screens: {
-        xs: "480px",
+        xs: '480px',
       },
     },
   },
