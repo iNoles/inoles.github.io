@@ -8,18 +8,18 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-  # Steps represent a sequence of tasks that will be executed as part of the job
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Checkout
-      uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
-    
-    - name: Setup Node
-      uses: actions/setup-node@master
-    
-    - name: Install node modules
-      run: |
-        npm install
-    - name: Build with Gatsby
-      env:
+      - name: Checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+
+      - name: Setup Node
+        uses: actions/setup-node@master
+
+      - name: Install node modules
+        run: |
+          npm install
+      - name: Build with Gatsby
+        env:
           GATSBY_PORTFOLIO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: npm run build
+        run: npm run build
