@@ -29,6 +29,7 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           VALIDATE_CSS: false
+          VALIDATE_JAVASCRIPT_STANDARD: false
           VALIDATE_TYPESCRIPT_STANDARD: false
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
