@@ -19,6 +19,7 @@ const config: GatsbyConfig = {
     about:
       "Versatile Software Engineer with expertise in mobile and desktop development. Proven ability to design and deliver robust, scalable solutions. Proficient in diverse technologies, committed to staying current, and adept at problem-solving in collaborative environments.",
   },
+  graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-transformer-yaml",
