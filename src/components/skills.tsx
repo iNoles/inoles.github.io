@@ -1,7 +1,7 @@
-import React from 'react';
-import Section from './section';
-import SummaryItem from './summaryItem';
-import { ReturnValue } from '../site-metadata';
+import React from "react";
+import Section from "./section";
+import SummaryItem from "./summaryItem";
+import { ReturnValue } from "../site-metadata";
 
 const SectionSkills = ({ allSkillsYaml }: ReturnValue) => {
   const skills = allSkillsYaml?.nodes ?? [];

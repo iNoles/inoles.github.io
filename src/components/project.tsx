@@ -1,31 +1,32 @@
-import React from 'react';
-import Section from './section';
-import SummaryItem from './summaryItem';
-import { graphql, useStaticQuery } from 'gatsby';
+import React from "react";
+import Section from "./section";
+import SummaryItem from "./summaryItem";
+import { graphql, useStaticQuery } from "gatsby";
 
 const SectionProjects = () => {
   const projectData = useStaticQuery(graphql`
-  query {
-    githubData {
-      data {
-        user {
-          repositories {
-            edges {
-              node {
-                description
-                name
-                url
-                stargazers {
-                  totalCount
+    query {
+      githubData {
+        data {
+          user {
+            repositories {
+              edges {
+                node {
+                  description
+                  name
+                  url
+                  stargazers {
+                    totalCount
+                  }
+                  forkCount
                 }
-                forkCount
               }
             }
           }
         }
       }
     }
-  }`);
+  `);
   return (
     <Section title="Projects">
       {projectData.githubData.data.user.repositories.edges.map((project) => (
