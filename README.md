@@ -1,40 +1,28 @@
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
+# Jonathan Steele - Software Engineer Portfolio
 
-## 🚀 Quick start
+Welcome to my personal portfolio! This site showcases my work as a Software Engineer with expertise in mobile and desktop development, highlighting my ability to design and deliver robust, scalable solutions.
 
-**Create a Gatsby site.**
+## 🌟 About Me
 
-Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+I am Jonathan Steele, a versatile Software Engineer based in Florida, passionate about developing user-friendly applications and staying current with the latest technology trends. This portfolio demonstrates my skills, projects, and professional experience.
 
-```shell
-  # create a new Gatsby site using the minimal TypeScript starter
-  npm init gatsby -- -ts
-```
+## 🌐 Website
 
-**Start developing.**
+Visit my portfolio at [https://inoles.github.io](https://inoles.github.io)
 
-Navigate into your new site’s directory and start it up.
+## 🚀 Features
 
-```shell
-  cd my-gatsby-site/
-  npm run develop
-```
+- **GitHub Repositories**: Dynamic integration that displays my top public repositories, showcasing the breadth of my work and contributions.
+- **Responsive Design**: Optimized for all devices, ensuring a great user experience on desktop, tablet, and mobile.
+- **Dark Mode**: Supports both light and dark modes, enhancing accessibility and user preference.
+- **SEO and Analytics**: Integrated with Google Analytics for traffic analysis and SEO optimization for better search visibility.
 
-**Open the code and start customizing!**
+## 🛠️ Technologies Used
 
-Your site is now running at `http://localhost:8000!`
-Edit `src/pages/index.tsx` to see your site update in real-time!
+- **Frontend**: Gatsby, React, Tailwind CSS
+- **Backend**: GitHub API integration for dynamic content
+- **Other Tools**: TypeScript, PostCSS, Prettier
 
-- [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-- [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-- [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-- [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-- [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-- [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+## 🚧 Deployment
+
+The site is built with Gatsby and deployed via GitHub Pages, ensuring fast delivery of updates.
