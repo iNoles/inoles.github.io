@@ -6,7 +6,7 @@ Welcome to my personal portfolio! This site showcases my work as a Software Engi
 
 I am Jonathan Steele, a versatile Software Engineer based in Florida, passionate about developing user-friendly applications and staying current with the latest technology trends. This portfolio demonstrates my skills, projects, and professional experience.
 
-## 🌐 Website
+## 🌐 Site
 
 Visit my portfolio at [https://inoles.github.io](https://inoles.github.io)
 
