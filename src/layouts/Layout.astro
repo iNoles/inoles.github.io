@@ -5,14 +5,15 @@ interface Props {
 
 const { title } = Astro.props;
 
+import GoogleAnalytics from '../components/GoogleAnalytics.astro'
 import '../base.css';
-
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+                <GoogleAnalytics measurementId={'G-CVE0ZBT5L4'} />
 		<meta name="description" content="Software Engineer from Florida" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
