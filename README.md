@@ -1,4 +1,4 @@
-# 🌌 Developer Portfolio Website
+# 🌌 Developer Portfolio Site
 
 Welcome to my developer portfolio built with **Astro.js**, styled using **TailwindCSS**, and powered by **Bun.sh** for blazing-fast performance! 🚀
 
