@@ -5,49 +5,47 @@ import About from '../components/About.astro';
 import Education from '../components/Education.astro';
 import Experience from '../components/Experience.astro';
 import Skills from '../components/Skills.astro';
-import Project from '../components/Project.astro';
 ---
 
 <Layout title="Jonathan Steele | Software Engineer">
-	<main class="relative dark:bg-gray-700">
-	  <svg
-        class="hidden fixed transform right-0 top-5 z-0 xl:block"
-        width="404"
-        height="784"
-        fill="none"
-        viewBox="0 0 404 784"
-      >
-        <defs>
-          <pattern
-            id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
+  <main class="relative dark:bg-gray-700">
+    <svg
+      class="hidden fixed transform right-0 top-5 z-0 xl:block"
+      width="404"
+      height="784"
+      fill="none"
+      viewBox="0 0 404 784"
+    >
+      <defs>
+        <pattern
+          id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b"
+          x="0"
+          y="0"
+          width="20"
+          height="20"
+          patternUnits="userSpaceOnUse"
+        >
+          <rect
             x="0"
             y="0"
-            width="20"
-            height="20"
-            patternUnits="userSpaceOnUse"
-          >
-            <rect
-              x="0"
-              y="0"
-              width="4"
-              height="4"
-              class="text-gray-200 dark:text-gray-600 fill-current"
-            />
-          </pattern>
-        </defs>
-        <rect
-          width="404"
-          height="784"
-          fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
-        />
-      </svg>
-	  <div class="p-8 relative max-w-screen-xl xs:p-24">
-        <Header />
-        <About />
-        <Project />
-        <Education />
-        <Experience />
-        <Skills />
-	  </div>
-	</main>
+            width="4"
+            height="4"
+            class="text-gray-200 dark:text-gray-600 fill-current"
+          />
+        </pattern>
+      </defs>
+      <rect
+        width="404"
+        height="784"
+        fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
+      />
+    </svg>
+    <div class="p-8 relative max-w-screen-xl xs:p-24">
+      <Header />
+      <About />
+      <Education />
+      <Experience />
+      <Skills />
+   </div>
+  </main>
 </Layout>
