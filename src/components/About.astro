@@ -1,9 +1,10 @@
 ---
 import Section from './Section.astro';
+import { about } from '../site_metadata.json';
 ---
 
 <Section title="About Me">
   <div class="mb-6" style="white-space: pre-line;">
-    <p>Versatile Software Engineer with expertise in mobile and desktop development. Proven ability to design and deliver robust, scalable solutions. Proficient in diverse technologies, committed to staying current, and adept at problem-solving in collaborative environments.</p>
+    <p>{about}</p>
   </div>
 </Section>

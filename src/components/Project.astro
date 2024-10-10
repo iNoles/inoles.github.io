@@ -1,6 +1,7 @@
 ---
 import Section from './Section.astro';
 import SummaryItem from './SummaryItem.astro';
+import { github } from '../site_metadata.json';
 
 // Define the shape of a GitHub repo object
 interface GitHubRepo {
@@ -10,29 +11,34 @@ interface GitHubRepo {
   html_url: string;
 }
 
-const API_URL = 'https://api.github.com/search/repositories?q=user:iNoles+is:public+stars:%3E1&sort=stars';
-const GITHUB_TOKEN = import.meta.env.GITHUB_TOKEN; // Access the token from environment variables
+// Use template literals to construct the API URL
+const API_URL = `https://api.github.com/search/repositories?q=user:${github}+is:public+stars:%3E1&sort=stars`;
+const GITHUB_TOKEN = import.meta.env.GITHUB_TOKEN; // Ensure this token is set in the environment variables
 
-// Fetch GitHub data during build time with authorization header
-const response = await fetch(API_URL, {
-  headers: {
-    Authorization: `token ${GITHUB_TOKEN}`,
-  },
-});
+try {
+  // Fetch GitHub data during build time with authorization header
+  const response = await fetch(API_URL, {
+    headers: {
+      Authorization: `token ${GITHUB_TOKEN}`,
+    },
+  });
 
-if (!response.ok) {
-  throw new Error(`HTTP error! Status: ${response.status}`);
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+
+  // Access the 'items' array which contains the repositories
+  const { items }: { items: GitHubRepo[] } = await response.json();
+} catch (error) {
+  console.error('Error fetching data from GitHub:', error);
 }
-
-// Access the 'items' array which contains the repositories
-const { items }: { items: GitHubRepo[] } = await response.json();
 ---
 
 <Section title="Projects">
   {items.map((repo) => (
     <SummaryItem
       name={repo.name}
-      description={repo.description}
+      description={repo.description || 'No description available'}
       link={repo.html_url}
     />
   ))}
