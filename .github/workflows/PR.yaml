@@ -13,13 +13,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4
 
-      - name: Setup Node
-        uses: actions/setup-node@master
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2s
 
-      - name: Install node modules
-        run: |
-          npm install
-      - name: Build with Gatsby
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build with Astro
         env:
-          GATSBY_PORTFOLIO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bun run build
