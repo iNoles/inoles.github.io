@@ -24,11 +24,12 @@ if (!response.ok) {
   throw new Error(`HTTP error! Status: ${response.status}`);
 }
 
-const repos: GitHubRepo[] = await response.json();
+// Access the 'items' array which contains the repositories
+const { items }: { items: GitHubRepo[] } = await response.json();
 ---
 
 <Section title="Projects">
-  {repos.map((repo) => (
+  {items.map((repo) => (
     <SummaryItem
       name={repo.name}
       description={repo.description}
