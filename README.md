@@ -1,28 +1,49 @@
-# Jonathan Steele - Software Engineer Portfolio
+# 🌌 Developer Portfolio Website
 
-Welcome to my personal portfolio! This site showcases my work as a Software Engineer with expertise in mobile and desktop development, highlighting my ability to design and deliver robust, scalable solutions.
+Welcome to my developer portfolio built with **Astro.js**, styled using **TailwindCSS**, and powered by **Bun.sh** for blazing-fast performance! 🚀
 
-## 🌟 About Me
+## ✨ Features
 
-I am Jonathan Steele, a versatile Software Engineer based in Florida, passionate about developing user-friendly applications and staying current with the latest technology trends. This portfolio demonstrates my skills, projects, and professional experience.
+- **Astro.js Framework** for building a lightweight static site
+- **TailwindCSS** for modern, responsive, and custom UI design
+- **Bun.sh** for ultra-fast server-side rendering and bundling
+- **Responsive Design** to look great on any device
+- **SEO Optimized** to improve search engine visibility
+- **Modular Code** to easily expand and maintain
 
-## 🌐 Site
+## 🚀 Getting Started
 
-Visit my portfolio at [https://inoles.github.io](https://inoles.github.io)
+### Prerequisites
 
-## 🚀 Features
+- [Bun.sh](https://bun.sh/) installed.
+- (Optional) Node.js, though **Bun.sh** handles most tasks.
 
-- **GitHub Repositories**: Dynamic integration that displays my top public repositories, showcasing the breadth of my work and contributions.
-- **Responsive Design**: Optimized for all devices, ensuring a great user experience on desktop, tablet, and mobile.
-- **Dark Mode**: Supports both light and dark modes, enhancing accessibility and user preference.
-- **SEO and Analytics**: Integrated with Google Analytics for traffic analysis and SEO optimization for better search visibility.
+### Installation
 
-## 🛠️ Technologies Used
+1. Clone the repository:
 
-- **Frontend**: Gatsby, React, Tailwind CSS
-- **Backend**: GitHub API integration for dynamic content
-- **Other Tools**: TypeScript, PostCSS, Prettier
+   ```bash
+   git clone https://github.com/iNoles/inoles.github.io.git
+   cd inoles.github.io
+   ```
 
-## 🚧 Deployment
+2. Install dependencies using Bun:
 
-The site is built with Gatsby and deployed via GitHub Pages, ensuring fast delivery of updates.
+   ```bash
+   bun install
+   ```
+
+### Available Scripts
+
+- ``bun dev``: Start the development server.
+- ``bun build``: Create a production build.
+- ``bun preview``: Preview the production build.
+
+### Contributing
+
+Contributions are welcome! Here's how you can help:
+1. Fork the repository.
+2. Create your feature branch (``git checkout -b feature/YourFeature``).
+3. Commit your changes (``git commit -m 'Add YourFeature'``).
+4. Push to the branch (``git push origin feature/YourFeature``).
+5. Open a pull request.

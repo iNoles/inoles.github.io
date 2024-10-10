@@ -1,0 +1,17 @@
+---
+interface Props {
+  name: string;
+  date?: string;
+  description: string;
+  link?: string;
+}
+
+const { name, date = "", description, link = "" } = Astro.props;
+
+---
+
+<div class="mb-6">
+  <h3 class="font-semibold text-gray-900 dark:text-white pb-1">{name}</h3>
+  {date && <h3 class="italic text-gray-600 dark:text-gray-300 pb-1">{date}</h3>}
+  <p class="text-md text-gray-600 dark:text-gray-200 font-light">{description}</p>
+</div>

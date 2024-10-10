@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .max-w-150 {
+    max-width: 150px;
+  }
+
+  .top-5 {
+    top: 5%;
+  }
+}
