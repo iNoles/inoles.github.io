@@ -10,7 +10,7 @@ interface GitHubRepo {
   html_url: string;
 }
 
-const API_URL = 'https://api.github.com/users/iNoles/repos';
+const API_URL = 'https://api.github.com/search/repositories?q=user:iNoles+is:public+stars:%3E1&sort=stars';
 const GITHUB_TOKEN = import.meta.env.GITHUB_TOKEN; // Access the token from environment variables
 
 // Fetch GitHub data during build time with authorization header
