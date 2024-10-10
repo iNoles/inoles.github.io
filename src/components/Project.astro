@@ -2,6 +2,14 @@
 import Section from './Section.astro';
 import SummaryItem from './SummaryItem.astro';
 
+// Define the shape of a GitHub repo object
+interface GitHubRepo {
+  id: number;
+  name: string;
+  description: string;
+  html_url: string;
+}
+
 const API_URL = 'https://api.github.com/users/iNoles/repos';
 const GITHUB_TOKEN = import.meta.env.GITHUB_TOKEN; // Access the token from environment variables
 
@@ -16,13 +24,12 @@ if (!response.ok) {
   throw new Error(`HTTP error! Status: ${response.status}`);
 }
 
-const repos = await response.json();
+const repos: GitHubRepo[] = await response.json();
 ---
 
 <Section title="Projects">
   {repos.map((repo) => (
     <SummaryItem
-      key={repo.id} // Add key prop for list items
       name={repo.name}
       description={repo.description}
       link={repo.html_url}
