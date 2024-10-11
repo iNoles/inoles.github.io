@@ -11,6 +11,8 @@ interface GitHubRepo {
   html_url: string;
 }
 
+let items: GitHubRepo[] = []; // Initialize items as an empty array
+
 // Use template literals to construct the API URL
 const API_URL = `https://api.github.com/search/repositories?q=user:${github}+is:public+stars:%3E1&sort=stars`;
 const GITHUB_TOKEN = import.meta.env.GITHUB_TOKEN; // Ensure this token is set in the environment variables
@@ -28,18 +30,23 @@ try {
   }
 
   // Access the 'items' array which contains the repositories
-  const { items }: { items: GitHubRepo[] } = await response.json();
+  const data = await response.json();
+  items = data.items; // Assign the fetched items to the local variable
 } catch (error) {
   console.error('Error fetching data from GitHub:', error);
 }
 ---
 
 <Section title="Projects">
-  {items.map((repo) => (
-    <SummaryItem
-      name={repo.name}
-      description={repo.description || 'No description available'}
-      link={repo.html_url}
-    />
-  ))}
+  {items.length > 0 ? (
+    items.map((repo) => (
+      <SummaryItem
+        name={repo.name}
+        description={repo.description || 'No description available'}
+        link={repo.html_url}
+      />
+    ))
+  ) : (
+    <p>No projects available.</p>
+  )}
 </Section>

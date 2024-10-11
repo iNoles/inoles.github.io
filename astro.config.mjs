@@ -8,7 +8,6 @@ export default defineConfig({
   vite: {
     plugins: [yaml()]
   },
-
   integrations: [
     tailwind({
       // Example: Allow writing nested CSS declarations
