@@ -1,7 +1,4 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [
-    "*.yaml",
-    "files.d.ts",
-  ],
+  "include": ["*.yaml", "files.d.ts"]
 }
