@@ -3,10 +3,10 @@
   description: Java, Kotlin, Swift, Objective-C, C#, JavaScript (ES6+), Typescript, Dart, C++
 
 - name: Frameworks
-  description: Jetpack Compose, React, .NET Core, .NET MAUI, ASP.NET
+  description: Jetpack Compose, UIKit, SwiftUI, React, .NET, .NET MAUI, ASP.NET
 
 - name: Databases
   description: PostgreSQL, MySQL, SQLite
 
 - name: Other
-  description: CI / CD (Github Actions), Android, iOS, Flutter, Agile, Node.js
+  description: Git, CI / CD (Github Actions), Android, iOS, Gradle, SSH, Flutter, Agile, GraphQL, Node.js
