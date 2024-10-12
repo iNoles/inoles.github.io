@@ -20,7 +20,7 @@ try {
   // Fetch GitHub data during build time with authorization header
   const response = await fetch(API_URL, {
     headers: {
-      Authorization: `token ${GITHUB_TOKEN}`,
+      Authorization: `Bearer ${GITHUB_TOKEN}`,
     },
   });
 
