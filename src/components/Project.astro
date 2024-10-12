@@ -1,6 +1,7 @@
 ---
 import Section from './Section.astro';
 import SummaryItem from './SummaryItem.astro';
+import { fetchWithRetry } from '../utils/fetchWithRetry';
 
 // Define the shape of a GitHub repo object
 interface GitHubRepo {
@@ -10,38 +11,25 @@ interface GitHubRepo {
   html_url: string;
 }
 
-let items: GitHubRepo[] = []; // Initialize items as an empty array
+let repos: GitHubRepo[] = []; // Initialize repos as an empty array
 
-// Use template literals to construct the API URL
-const API_URL = 'https://api.github.com/search/repositories?q=user:iNoles+is:public+stars:%3E1&sort=stars';
-const GITHUB_TOKEN = import.meta.env.GITHUB_TOKEN; // Ensure this token is set in the environment variables
-
+const username = 'iNoles';
+const token = import.meta.env.GITHUB_TOKEN; // Ensure this token is set in the environment variables
 try {
-  // Fetch GitHub data during build time with authorization header
-  const response = await fetch(API_URL, {
-    headers: {
-      Authorization: `Bearer ${GITHUB_TOKEN}`,
-    },
-  });
-
-  if (!response.ok) {
-    throw new Error(`HTTP error! Status: ${response.status}`);
-  }
-
-  // Access the 'items' array which contains the repositories
+  const response = await fetchWithRetry(username, token, 3, 2000); // 3 retries with 2 seconds between retries
   const data = await response.json();
-  items = data.items; // Assign the fetched items to the local variable
+  repos = data.items || [];
 } catch (error) {
-  console.error('Error fetching data from GitHub:', error);
+  console.error(error.message);
 }
 ---
 
 <Section title="Projects">
-  {items.length > 0 ? (
-    items.map((repo) => (
+  {repos.length > 0 ? (
+    repos.map((repo) => (
       <SummaryItem
         name={repo.name}
-        description={repo.description || 'No description available'}
+        description={repo.description}
         link={repo.html_url}
       />
     ))
