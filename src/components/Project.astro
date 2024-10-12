@@ -1,7 +1,6 @@
 ---
 import Section from './Section.astro';
 import SummaryItem from './SummaryItem.astro';
-import { github } from '../site_metadata.json';
 
 // Define the shape of a GitHub repo object
 interface GitHubRepo {
@@ -14,7 +13,7 @@ interface GitHubRepo {
 let items: GitHubRepo[] = []; // Initialize items as an empty array
 
 // Use template literals to construct the API URL
-const API_URL = `https://api.github.com/search/repositories?q=user:${github}+is:public+stars:%3E1&sort=stars`;
+const API_URL = 'https://api.github.com/search/repositories?q=user:iNoles+is:public+stars:%3E1&sort=stars';
 const GITHUB_TOKEN = import.meta.env.GITHUB_TOKEN; // Ensure this token is set in the environment variables
 
 try {
