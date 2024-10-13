@@ -16,6 +16,7 @@ export async function fetchWithRetry(
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`, // Use the Bearer token for authorization
         },
+        mode: "cors",
       });
 
       // If the fetch succeeds, return the response
