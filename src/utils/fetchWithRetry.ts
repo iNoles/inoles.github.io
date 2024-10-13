@@ -1,6 +1,9 @@
-// utils/fetchWithRetry.ts
-
-export async function fetchWithRetry(username, token, retries = 3, delay = 1000) {
+export async function fetchWithRetry(
+  username,
+  token,
+  retries = 3,
+  delay = 1000,
+) {
   // Construct the GitHub API URL with dynamic username and additional parameters
   const GITHUB_API_URL = `https://api.github.com/search/repositories?q=user:${username}+is:public+stars:>1&sort=stars`;
 
@@ -8,9 +11,9 @@ export async function fetchWithRetry(username, token, retries = 3, delay = 1000)
     try {
       // Try the fetch operation with Bearer token in headers
       const response = await fetch(GITHUB_API_URL, {
-        method: 'GET',
+        method: "GET",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
           Authorization: `Bearer ${token}`, // Use the Bearer token for authorization
         },
       });
