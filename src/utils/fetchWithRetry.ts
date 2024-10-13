@@ -5,7 +5,7 @@ export async function fetchWithRetry(
   delay = 1000,
 ) {
   // Construct the GitHub API URL with dynamic username and additional parameters
-  const GITHUB_API_URL = `https://api.github.com/search/repositories?q=user:${username}+is:public+stars:>1&sort=stars`;
+  const GITHUB_API_URL = `https://api.github.com/search/repositories?q=user:${username}+stars:>1&sort=stars`;
 
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
