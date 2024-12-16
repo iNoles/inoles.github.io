@@ -1,14 +1,17 @@
 ---
+import { Image } from 'astro:assets';
 import { name, title, github, linkedin } from '../site_metadata.json';
+import profile from '../../public/images/profile.jpg';
 ---
 
 <div class="block mb-6 md:flex">
-  <div class="w-full max-w-150">
-    <img
+  <div class="w-full max-w-37">
+    <Image
       class="rounded-full transform transition-all duration-150 hover:scale-105"
-      src="images/profile.jpg"
+      src={profile}
       width="150"
       height="150"
+      loading="eager"
       alt={name}
     />
   </div>

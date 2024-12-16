@@ -13,10 +13,10 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/partytown": "^2.1.2",
-    "@astrojs/tailwind": "^5.1.2",
-    "astro": "^5.0.0",
-    "tailwindcss": "^3.4.13",
-    "typescript": "^5.6.3"
+    "@tailwindcss/vite": "^4.0.0-beta.7",
+    "astro": "^5.0.5",
+    "tailwindcss": "^4.0.0-beta.7",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@rollup/plugin-yaml": "^4.1.2"
