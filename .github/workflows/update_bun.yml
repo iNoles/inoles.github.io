@@ -1,4 +1,4 @@
-name: 'Dependabot: Update bun.lockb'
+name: "Dependabot: Update bun.lockb"
 
 on:
   pull_request:
