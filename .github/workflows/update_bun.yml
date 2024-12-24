@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: oven-sh/setup-bun@v2
         with:
-           bun-version: latest
+          bun-version: latest
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
