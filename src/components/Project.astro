@@ -25,13 +25,13 @@ try {
 ---
 
 <Section title="Projects">
-   repos.map((repo) => (
+   {repos.map((repo) => (
       <SummaryItem
         name={repo.name}
         description={repo.description}
         link={repo.html_url}
       />
-  ))
+  ))}
   <SummaryItem
     name="Lifeguard Times (Google Play)"
     description="A Jetpack Compose app for Lifeguard Times to allow readers trending and newsworthy articles related to lifeguards and lifeguarding-related topics"
