@@ -1,5 +1,11 @@
 # 🌌 Developer Portfolio Site
 
+![Astro](https://img.shields.io/badge/Framework-Astro.js-blue?logo=astro)
+![Tailwind](https://img.shields.io/badge/Styled%20With-TailwindCSS-blue?logo=tailwindcss)
+![Bun](https://img.shields.io/badge/Built%20With-Bun.sh-yellow?logo=bun)
+![License](https://img.shields.io/github/license/iNoles/inoles.github.io)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
 Welcome to my developer portfolio built with **Astro.js**, styled using **TailwindCSS**, and powered by **Bun.sh** for blazing-fast performance! 🚀
 
 ## ✨ Features
@@ -16,7 +22,6 @@ Welcome to my developer portfolio built with **Astro.js**, styled using **Tailwi
 ### Prerequisites
 
 - [Bun.sh](https://bun.sh/) installed.
-- (Optional) Node.js, though **Bun.sh** handles most tasks.
 
 ### Installation
 
