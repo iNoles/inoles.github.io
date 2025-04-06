@@ -51,6 +51,9 @@ jobs:
           # Upload dist folder
           path: "./dist"
 
+      - name: Copy LICENSE file into deploy directory
+        run: cp LICENSE dist/  # Copies LICENSE file into the build folder before deploying
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
