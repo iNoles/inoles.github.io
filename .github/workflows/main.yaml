@@ -43,7 +43,7 @@ jobs:
         run: bun run build
 
       - name: Copy LICENSE file into deploy directory
-        run: cp LICENSE dist/  # Copies LICENSE file into the build folder before deploying
+        run: cp LICENSE.txt dist/  # Copies LICENSE file into the build folder before deploying
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
