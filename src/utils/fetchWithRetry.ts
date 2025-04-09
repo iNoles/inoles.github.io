@@ -21,7 +21,13 @@ export async function fetchWithRetry(
 
       // If the fetch succeeds, return the response
       if (response.ok) {
-        return response;
+        const data = await response.json();
+
+        // Filter out archived repositories
+        const filteredRepos = data.items.filter((repo) => !repo.archived);
+
+        // Return the filtered repositories
+        return filteredRepos;
       } else {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
