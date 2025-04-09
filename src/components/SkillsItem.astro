@@ -1,0 +1,27 @@
+---
+interface Section {
+  title: string;
+  skills: string[];
+}
+
+interface Props {
+  sections: Section[];
+}
+
+const { sections } = Astro.props;
+---
+
+{sections.map(({ title, skills }) => (
+  <section class="mb-8">
+    <h3 class="font-semibold text-gray-900 dark:text-white pb-1">{title}</h3>
+    <div class="flex flex-wrap gap-2">
+      {skills.map((skill) => (
+        <span
+          class="inline-block bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full dark:bg-gray-700 dark:text-white"
+        >
+          {skill}
+        </span>
+      ))}
+    </div>
+  </section>
+))}

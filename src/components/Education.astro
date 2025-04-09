@@ -1,15 +1,9 @@
 ---
 import Section from './Section.astro';
-import SummaryItem from './SummaryItem.astro';
+import EducationItems from './EducationItems.astro';
 import educations from '../../educations.yaml';
 ---
 
 <Section title="Education">
-  {educations.map((education) => (
-    <SummaryItem
-      name={education.name}
-      date={education.date}
-      description={education.description}
-    />
-  ))}
+  <EducationItems sections={educations.sections} />
 </Section>

@@ -1,8 +1,22 @@
 ---
+sections:
 - name: Eastern Florida State College
   date: August 2019 - December 2022
   description: Bachelor of Applied Science in Computer Information System Technology
+  coursework:
+    - Software Development
+    - Object-Oriented Programming
+    - Mobile App Development
+    - Software Integration & Testing
+    - Web Applications Programming
 
-- name: Eastern Florida State College
+- name: Brevard Community College (now Eastern Florida State College)
   date: August 2009 - May 2015
   description: Associate of Science in Computer Programming & Analysis
+  coursework:
+    -  Principles of Programming
+    - Introduction to C++ Programming
+    - C++ Programming Advanced
+    - C# Programming
+    - Introduction to Java Programming
+    - Visual Basic Programming

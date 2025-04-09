@@ -1,9 +1,45 @@
----
-- name: Programming Languages
-  description: C++, C, Java, Kotlin, C#, Swift, C#, JavaScript (ES6+), Typescript, Dart, Objective-C
+sections:
+  - title: "Programming Languages"
+    skills:
+      - C++
+      - C
+      - Java
+      - Kotlin
+      - C#
+      - Swift
+      - JavaScript (ES6+)
+      - Typescript
+      - Dart
+      - Objective-C
 
-- name: Frameworks
-  description: Jetpack Compose, UIKit, SwiftUI, .NET, .NET MAUI, ASP.NET Core
+  - title: "Frameworks & Libraries"
+    skills:
+      - Jetpack Compose
+      - UIKit
+      - SwiftUI
+      - .NET
+      - .NET MAUI
+      - ASP.NET Core
+      - Flutter
+      - Astro
+      - Svelte
+      - Tailwind CSS
 
-- name: Other
-  description: Git, CI / CD (Github Actions), Android, iOS, Gradle, SSH, Flutter, Node.js, SQLite, Bash
+  - title: "Database & Backend"
+    skills:
+      - SQLite
+      - MySQL
+      - PostgreSQL
+      - RESTful APIs
+      - GraphQL
+
+  - title: "Other"
+    skills:
+      - Git
+      - CI / CD (Github Actions)
+      - Android
+      - iOS
+      - Gradle
+      - SSH
+      - Node.js
+      - Bash
