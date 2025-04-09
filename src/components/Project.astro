@@ -18,9 +18,7 @@ const token = import.meta.env.GITHUB_TOKEN; // Ensure this token is set in the e
 try {
   const response = await fetchWithRetry(username, token, 3, 2000); // 3 retries with 2 seconds between retries
   const data = await response.json();
-  // Filter out archived repositories
-  const filteredRepos = data.items.filter((repo) => !repo.archived);
-  repos = filteredRepos.items || [];
+  repos = data.items || [];
 } catch (error) {
   console.error(error.message);
 }
