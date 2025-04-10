@@ -23,7 +23,8 @@ const { sections } = Astro.props;
         {coursework.map((course) => (
           <span
             key={course}  // Adding a unique key for each element
-            class="inline-block bg-gray-200 text-gray-800 text-sm font-medium px-3 py-1 rounded-full dark:bg-gray-700 dark:text-white"
+            class="inline-block bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full
+                dark:bg-gray-600 dark:text-white hover:dark:bg-gray-500 hover:bg-gray-200 transition-colors duration-150"
           >
             {course}
           </span>
