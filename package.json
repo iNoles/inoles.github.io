@@ -13,9 +13,9 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/partytown": "^2.1.4",
-    "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.7.8",
-    "tailwindcss": "^4.1.4",
+    "@tailwindcss/vite": "^4.1.6",
+    "astro": "^5.7.12",
+    "tailwindcss": "^4.1.6",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
