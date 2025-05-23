@@ -15,6 +15,25 @@
 @layer base {
   :root {
     font-family: var(--font-inter), sans-serif;
+    /* Light theme variables */
+    --bg-color: #E5E5E5;
+    --text-color: #2C2C3E;
+    --header-color: #5C4B7D;
+    --link-color: #3A9D9B;
+    --subtext-color: #8D7CA8;
+    --card-bg: #FFFFFF;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Dark theme variables override */
+      --bg-color: #1E1E2F;
+      --text-color: #E5E5E5;
+      --header-color: #A390C6;
+      --link-color: #5FC8C6;
+      --subtext-color: #7B6991;
+      --card-bg: #2A2A3E;
+    }
   }
 
   *,
@@ -24,6 +43,30 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  color: var(--header-color);
+}
+
+a, button {
+  color: var(--link-color);
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.subtext {
+  color: var(--subtext-color);
+  font-size: 0.9rem;
 }
 
 @utility p-24-xs {
