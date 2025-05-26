@@ -1,6 +1,6 @@
 export async function fetchWithRetry(
-  username,
-  token,
+  username: string,
+  token: string,
   retries = 3,
   delay = 1000,
 ) {
@@ -23,10 +23,12 @@ export async function fetchWithRetry(
         throw new Error(`HTTP error! status: ${response.status}`);
       }
     } catch (error) {
-      console.error(`Attempt ${attempt} failed: ${error.message}`);
+      const errorMessage = error instanceof Error ? error.message : String(error);
+
+      console.error(`Attempt ${attempt} failed: ${errorMessage}`);
 
       if (attempt === retries) {
-        throw new Error(`Failed after ${retries} attempts: ${error.message}`);
+        throw new Error(`Failed after ${retries} attempts: ${errorMessage}`);
       }
 
       await new Promise((resolve) => setTimeout(resolve, delay));
