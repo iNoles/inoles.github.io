@@ -1,4 +1,14 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": ["**/*.ts", "**/*.astro", "**/*.yaml", "files.d.ts"]
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.astro",
+    "**/*.yaml",
+    "**/*.yml",
+    "files.d.ts"
+  ]
 }

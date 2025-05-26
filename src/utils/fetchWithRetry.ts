@@ -3,7 +3,7 @@ export async function fetchWithRetry(
   token: string,
   retries = 3,
   delay = 1000,
-) {
+): Promise<Response> {
   const GITHUB_API_URL = `https://api.github.com/search/repositories?q=user:${username}+stars:>1&sort=stars`;
 
   for (let attempt = 1; attempt <= retries; attempt++) {
@@ -34,4 +34,7 @@ export async function fetchWithRetry(
       await new Promise((resolve) => setTimeout(resolve, delay));
     }
   }
+
+   // This line is unreachable but added to satisfy TS about all code paths returning.
+   throw new Error("Unexpected error: retries loop exited without returning or throwing.");
 }

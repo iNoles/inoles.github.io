@@ -2,10 +2,16 @@
 import Section from './Section.astro';
 import SummaryItem from './SummaryItem.astro';
 import experiences from '../../work-history.yaml';
+
+interface Experience {
+  name: string;
+  date: string;
+  description: string;
+}
 ---
 
 <Section title="Experience">
-  {experiences.map((experience) => (
+  {experiences.map((experience: Experience) => (
     <SummaryItem
       name={experience.name}
       date={experience.date}
