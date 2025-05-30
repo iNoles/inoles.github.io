@@ -4,11 +4,5 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "**/*.ts",
-    "**/*.astro",
-    "**/*.yaml",
-    "**/*.yml",
-    "files.d.ts"
-  ]
+  "include": ["**/*.ts", "**/*.astro", "**/*.yaml", "**/*.yml", "files.d.ts"]
 }

@@ -23,7 +23,8 @@ export async function fetchWithRetry(
         throw new Error(`HTTP error! status: ${response.status}`);
       }
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : String(error);
+      const errorMessage =
+        error instanceof Error ? error.message : String(error);
 
       console.error(`Attempt ${attempt} failed: ${errorMessage}`);
 
@@ -35,6 +36,8 @@ export async function fetchWithRetry(
     }
   }
 
-   // This line is unreachable but added to satisfy TS about all code paths returning.
-   throw new Error("Unexpected error: retries loop exited without returning or throwing.");
+  // This line is unreachable but added to satisfy TS about all code paths returning.
+  throw new Error(
+    "Unexpected error: retries loop exited without returning or throwing.",
+  );
 }

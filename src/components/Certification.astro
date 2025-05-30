@@ -1,0 +1,21 @@
+---
+import Section from './Section.astro';
+import SummaryItem from './SummaryItem.astro';
+import certifications from '../../certifications.yaml';
+
+interface Certifications {
+  name: string;
+  date: string;
+  description: string;
+}
+---
+
+<Section title="Certifications">
+  {certifications.map((certification: Certifications) => (
+    <SummaryItem
+      name={certification.name}
+      date={certification.date}
+      description={certification.description}
+  />
+  ))}
+</Section>

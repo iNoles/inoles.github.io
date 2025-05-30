@@ -16,23 +16,23 @@
   :root {
     font-family: var(--font-inter), sans-serif;
     /* Light theme variables */
-    --bg-color: #E5E5E5;
-    --text-color: #2C2C3E;
-    --header-color: #5C4B7D;
+    --bg-color: #e5e5e5;
+    --text-color: #2c2c3e;
+    --header-color: #5c4b7d;
     --link-color: #153837;
-    --subtext-color: #8D7CA8;
-    --card-bg: #FFFFFF;
+    --subtext-color: #8d7ca8;
+    --card-bg: #ffffff;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
       /* Dark theme variables override */
-      --bg-color: #1E1E2F;
-      --text-color: #E5E5E5;
-      --header-color: #A390C6;
-      --link-color: #5FC8C6;
-      --subtext-color: #7B6991;
-      --card-bg: #2A2A3E;
+      --bg-color: #1e1e2f;
+      --text-color: #e5e5e5;
+      --header-color: #a390c6;
+      --link-color: #5fc8c6;
+      --subtext-color: #7b6991;
+      --card-bg: #2a2a3e;
     }
   }
 
@@ -50,11 +50,14 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--header-color);
 }
 
-a, button {
+a,
+button {
   color: var(--link-color);
 }
 
