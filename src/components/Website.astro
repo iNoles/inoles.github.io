@@ -1,0 +1,21 @@
+---
+import Section from './Section.astro';
+import SummaryItem from './SummaryItem.astro';
+import websites from '../../website.yaml';
+
+interface Websites {
+  name: string;
+  link: string;
+  description: string;
+}
+---
+
+<Section title="Website">
+{websites.map((website: Websites) => (
+    <SummaryItem
+      name={website.name}
+      link={website.link}
+      description={website.description}
+  />
+  ))}
+</Section>
