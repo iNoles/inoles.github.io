@@ -1,0 +1,9 @@
+{
+  "env": {
+    "es2022": true
+  },
+  "globals": {
+    "fetch": "readonly",
+    "Response": "readonly"
+  }
+}
