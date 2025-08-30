@@ -5,7 +5,7 @@
 
 - name: Movie Explorer
   description: "A Vue.js application that allows users to search for movies, view details, and explore movie information."
-  link: https://inoles.github.io/movie-explorer/
+  link: https://inoles.github.io/MovieExplorer/
 
 - name: Minesweeper
   description: "A classic Minesweeper game implemented in Svelte, allowing users to play the game in their browser."
