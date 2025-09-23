@@ -4,9 +4,9 @@
   "author": "Jonathan Steele",
   "dependencies": {
     "@astrojs/partytown": "^2.1.4",
-    "@tailwindcss/vite": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.13",
     "astro": "5.13.10",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "^4.1.13"
   },
   "scripts": {
     "dev": "astro dev",
