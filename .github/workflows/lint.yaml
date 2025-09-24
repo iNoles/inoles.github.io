@@ -24,7 +24,7 @@ jobs:
           # list of files that changed across commits
           fetch-depth: 0
           
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
          node-version-file: '.nvmrc'
 
