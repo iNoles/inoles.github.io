@@ -23,6 +23,10 @@ jobs:
           # super-linter needs the full git history to get the
           # list of files that changed across commits
           fetch-depth: 0
+          
+      - uses: actions/setup-node@v4
+        with:
+         node-version-file: '.nvmrc'
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
@@ -35,7 +39,5 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           VALIDATE_CSS: false
-          VALIDATE_JAVASCRIPT_STANDARD: false
-          VALIDATE_TYPESCRIPT_STANDARD: false
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
