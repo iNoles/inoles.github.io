@@ -3,7 +3,7 @@ interface Section {
   name: string;
   date?: string;
   description: string;
-  coursework?: string[];  // Ensuring it's an array of strings, not a single string
+  coursework?: string[];
 }
 
 interface Props {
@@ -14,16 +14,27 @@ const { sections } = Astro.props;
 ---
 
 {sections.map(({ name, date, description, coursework }) => (
-  <section class="mb-8">
+  <section
+    class="mb-8 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 
+           rounded-xl shadow-md p-6 transition hover:shadow-lg"
+  >
     <h3 class="font-semibold text-gray-900 dark:text-white pb-1">{name}</h3>
-    {date && <h3 class="italic text-gray-600 dark:text-gray-300 pb-1">{date}</h3>}
-    <p class="text-md text-gray-600 dark:text-gray-200 font-light">{description}</p>
-    {coursework && coursework.length > 0 && (  // Check if coursework exists and is not empty
+
+    {date && (
+      <h3 class="italic text-gray-600 dark:text-gray-300 pb-1">{date}</h3>
+    )}
+
+    <p class="text-md text-gray-600 dark:text-gray-200 font-light mb-3">
+      {description}
+    </p>
+
+    {coursework && coursework.length > 0 && (
       <div class="flex flex-wrap gap-2">
         {coursework.map((course) => (
           <span
             class="inline-block bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full
-                dark:bg-gray-600 dark:text-white hover:dark:bg-gray-500 hover:bg-gray-200 transition-colors duration-150"
+                   dark:bg-gray-600 dark:text-white hover:dark:bg-gray-500 hover:bg-gray-200 
+                   transition-colors duration-150"
           >
             {course}
           </span>

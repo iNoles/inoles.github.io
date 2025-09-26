@@ -4,7 +4,12 @@ import { about } from '../site_metadata.json';
 ---
 
 <Section title="About Me">
-  <div class="mb-6" style="white-space: pre-line;">
-    <p>{about}</p>
+  <div
+    class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 
+           rounded-2xl shadow-md p-6 transition hover:shadow-lg"
+  >
+    <div style="white-space: pre-line;">
+      <p>{about}</p>
+    </div>
   </div>
 </Section>
