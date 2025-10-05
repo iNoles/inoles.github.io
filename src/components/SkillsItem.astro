@@ -11,15 +11,17 @@ interface Props {
 const { sections } = Astro.props;
 ---
 
-{sections.map(({ title, skills }) => (
+{sections.map(({ title, skills }, index) => (
   <section
+    key={index}
     class="mb-8 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 
-           rounded-xl shadow-md p-6 transition hover:shadow-lg"
+           rounded-xl shadow-md p-6 transition-shadow hover:shadow-lg"
   >
-    <h3 class="font-semibold text-gray-900 dark:text-white pb-3">{title}</h3>
+    <h3 class="font-semibold text-gray-900 dark:text-white pb-3 text-lg">{title}</h3>
     <div class="flex flex-wrap gap-2">
-      {skills.map((skill) => (
+      {skills.map((skill, i) => (
         <span
+          key={i}
           class="inline-block bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full
                  dark:bg-gray-600 dark:text-white hover:dark:bg-gray-500 hover:bg-gray-200 
                  transition-colors duration-150"
