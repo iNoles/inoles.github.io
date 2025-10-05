@@ -23,8 +23,8 @@ import profile from '../../public/images/profile.jpg';
         { href: `https://github.com/${github}`, label: "GitHub", icon: "github" },
         { href: linkedin, label: "LinkedIn", icon: "linkedin" },
         { href: "https://docs.google.com/document/d/1SJ2DIJDTYp_VTqL21_DZoIIEk0ZF2qLv9j462PdS2bY/edit?usp=sharing", label: "Resume", icon: null }
-      ].map(({ href, label, icon }, i) => (
-        <li key={i}>
+      ].map(({ href, label, icon }) => (
+        <li>
           <a
             class="inline-flex items-center px-4 py-2 text-xs font-semibold uppercase tracking-wider border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-600 hover:border-gray-500 dark:hover:border-gray-500 transition-colors duration-150"
             href={href}
