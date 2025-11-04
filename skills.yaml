@@ -18,7 +18,7 @@ sections:
       - Jetpack Compose
       - UIKit
       - SwiftUI
-      - .NET
+      - .NET Core
       - .NET MAUI
       - ASP.NET Core
       - Flutter
@@ -26,6 +26,7 @@ sections:
       - Astro
       - Svelte
       - Tailwind CSS
+      - React
 
   - title: "Database & Backend"
     skills:
