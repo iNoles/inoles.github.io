@@ -2,19 +2,39 @@
 - name: eLifeguard.com
   date: March 2016 - Present
   description: Software Engineer
-  link:
+  bullets:
+    - Delivered 5 Android/iOS apps for 500+ users, owning design, development, testing, and release
+    - Modernized mobile apps (Kotlin/Compose, SwiftUI, MVVM), reducing complexity 25%
+    - Built GitHub Actions and Python automation that eliminated ~80% of manual processes
+    - Improved product quality with 87% automated test coverage and CI/CD quality gates
+    - Collaborated with a designer and business stakeholders to refine UX and product requirements
+    - Enhanced performance and backend workflows by optimizing Magento and WordPress integrations
+  link: https://www.elifeguard.com
 
 - name: Brevard County Public Schools
   date: August 2022 - October 2022
   description: Volunteer IT Support Intern
-  link:
+  bullets:
+    - Assisted staff and students with hardware/software troubleshooting at one school campus
+    - Loaded Windows OS images from the network onto 50+ laptops, ensuring consistency and functionality
+    - Gained hands-on experience with server racks, hardware setup, and basic network configurations
+    - Supported general IT operations, including device setup and maintenance
+  link: https://www.brevardschools.org
 
 - name: IRI, The CoSort Company
   date: July 2015 - October 2015
   description: Software Tester Intern
-  link:
+  bullets:
+    - Automated data validation using 10 Shell scripts for regression testing
+    - Developed and executed 10+ JCL scripts to support regression testing
+    - Ensured custom implementations were aligned with main sort processes
+  link: https://www.iri.com
 
 - name: The Computer Repair Zone
   date: March 2013 - May 2013
   description: Volunteer Computer Repair Technician
+  bullets:
+    - Performed hardware diagnostics, repairs, and OS installations on PCs
+    - Assisted customers with troubleshooting and basic technical support
+    - Gained foundational hands-on experience that led to a career in software development
   link:
