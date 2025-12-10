@@ -4,7 +4,7 @@ export async function fetchWithRetry(
   retries = 3,
   delay = 1000,
 ): Promise<Response> {
-  const GITHUB_API_URL = `https://api.github.com/search/repositories?q=user:${username}+stars:>1&sort=stars`;
+  const GITHUB_API_URL = `https://api.github.com/search/repositories?q=user:${username}+stars:>1&sort=stars&order=desc&per_page=10`;
 
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
