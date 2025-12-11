@@ -14,7 +14,7 @@ const linkClass = "hover:underline hover:text-black dark:hover:text-blue-400";
 <div class="mb-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md p-6 transition hover:shadow-lg">
   {link ? (
     <h3 class="text-3xl font-bold mb-2 gradient-warm text-gray-900 dark:text-white pb-1">
-      <a href={link} target="_blank" class={linkClass}>
+      <a href={link} target="_blank" class={linkClass} aria-label={`${name} (opens in a new tab)`}>
         {name}
       </a>
     </h3>
