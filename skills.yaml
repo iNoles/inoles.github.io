@@ -12,6 +12,7 @@ sections:
       - Typescript
       - Dart
       - Objective-C
+      - PHP
 
   - title: "Frameworks & Libraries"
     skills:
