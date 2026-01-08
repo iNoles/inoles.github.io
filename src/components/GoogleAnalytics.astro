@@ -5,21 +5,13 @@ const measurementId = props.measurementId
 ---
 <script
   is:inline
-  type='text/partytown'
+  async
   src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}></script>
-<script
-  type='text/partytown'
-  data-ga-measurement-id={measurementId}
-  id='ga-init'
-  is:inline
->
-  const measurementId = document
-    .getElementById('ga-init')
-    .getAttribute('data-ga-measurement-id')
-  window.dataLayer = window.dataLayer || []
-  function gtag() {
-    dataLayer.push(arguments) // eslint-disable-line
-  }
-  gtag('js', new Date())
-  gtag('config', measurementId)
+<script type="text/partytown" is:inline>
+window.dataLayer = window.dataLayer || [];
+function gtag(){ 
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', '${measurementId}');
 </script>
