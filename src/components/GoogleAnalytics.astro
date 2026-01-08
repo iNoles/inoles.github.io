@@ -9,8 +9,8 @@ const measurementId = props.measurementId
   src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}></script>
 <!-- Partytown-enabled GA initialization -->
 <script type="text/partytown" is:inline>
-{`window.dataLayer = window.dataLayer || [];
+window.dataLayer = window.dataLayer || [];
 function gtag(){ dataLayer.push(arguments); }
 gtag('js', new Date());
-gtag('config', "${measurementId}");`}
+gtag('config', "${measurementId}");
 </script>
