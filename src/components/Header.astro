@@ -8,12 +8,12 @@ import Typewriter from "astro-typewriter";
 <header class="custom-header block mb-6 md:flex bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md rounded-2xl p-6 md:p-8 transition-colors duration-300">
   <div class="w-full max-w-37 flex-shrink-0">
     <Image
-      class="rounded-full transform transition-transform duration-150 hover:scale-105"
       src={profile}
-      width="150"
-      height="150"
-      loading="eager"
       alt="A man with glasses and a white shirt poses in front of a palm tree, enjoying a sunny day outdoors."
+      widths={[120, 150, 300]}
+      sizes="(max-width: 640px) 120px, 150px"
+      class="w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] rounded-full transform transition-transform duration-150 hover:scale-105"
+      loading="eager"
     />
   </div>
   <div class="flex-none pt-6 md:pt-1 md:flex-1 md:pl-8">
