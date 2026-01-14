@@ -9,11 +9,6 @@ import { Font } from 'astro:assets';
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
-    <!-- Google Analytics -->
-    <GoogleAnalytics measurementId={'G-CVE0ZBT5L4'} />
-
-    <!-- Meta tags for SEO -->
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -21,12 +16,11 @@ import { Font } from 'astro:assets';
     <meta name="og:title" content={title} />
     <meta name="og:description" content={description} />
     <meta name="og:type" content="website" />
-    
-    <!-- Title of the page -->
     <title>{title}</title>
-    
-    <!-- Font preloading for Inter font -->
     <Font cssVariable="--font-inter" preload />
+
+     <!-- Google Analytics -->
+    <GoogleAnalytics measurementId={'G-CVE0ZBT5L4'} />
   </head>
   <body>
     <slot />
