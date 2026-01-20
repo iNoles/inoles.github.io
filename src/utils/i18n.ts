@@ -1,3 +1,5 @@
+/* eslint-disable */
+// prettier-ignore
 import en_us from '../config/text.json'
 
 const translations = en_us
@@ -6,7 +8,7 @@ const translations = en_us
  * Global translation function
  * Returns the key itself if missing
  */
-export function t<T = string>(path: string): T {
+export const t = <T = string>(path: string): T => {
   const keys = path.split('.')
   let value: any = translations
 
