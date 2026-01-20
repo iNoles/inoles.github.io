@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "role": "Software Engineer",
+    "description": "Software Engineer from Florida"
+  },
+  "header": {
+    "animated": {
+      "first": "Full Stack Software Engineer",
+      "second": "Mobile Developer",
+      "third": "Web Developer",
+      "fourth": "Problem Solver",
+      "fifth": "Team Collaborator"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description": "8+ years crafting scalable, high-performance apps using C#/.NET, Android, iOS, KMM, and modern web technologies. I thrive in dynamic environments and collaborate with teams to align technical strategy with business goals, ship products users love, and improve processes through automation and testing."
+  },
+  "educations": {
+    "title": "Education",
+    "history": [
+      {
+        "name": "Eastern Florida State College",
+        "date": "August 2019 - December 2022",
+        "description": "Bachelor of Applied Science in Computer Information Systems Technology - Software Development",
+        "coursework": [
+          "Software Development",
+          "Object-Oriented Programming",
+          "Mobile App Development",
+          "Software Integration & Testing",
+          "Web Applications Programming"
+        ]
+      },
+      {
+        "name": "Brevard Community College (now Eastern Florida State College)",
+        "date": "August 2009 - May 2015",
+        "description": "Associate of Science in Computer Programming & Analysis",
+        "coursework": [
+          "Principles of Programming",
+          "Introduction to C++ Programming",
+          "C++ Programming Advanced",
+          "C# Programming",
+          "Introduction to Java Programming",
+          "Visual Basic Programming"
+        ]
+      }
+    ]
+  },
+  "certifications": {
+    "title": "Certifications",
+    "name": "Foundational C# with Microsoft",
+    "date": "December 2024",
+    "description": "Freecodecamp"
+  },
+  "skills": {
+    "title": "Skills",
+    "sections": [
+      {
+        "title": "Programming Languages",
+        "skills": [
+          "C++",
+          "C",
+          "C#",
+          "Kotlin",
+          "Swift",
+          "Java",
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "PHP"
+        ]
+      },
+      {
+        "title": "Frameworks & Libraries",
+        "skills": [
+          "Jetpack Compose",
+          "UIKit",
+          "SwiftUI",
+          ".NET Core",
+          ".NET MAUI",
+          "ASP.NET Core",
+          "Vue",
+          "Astro",
+          "Svelte",
+          "Tailwind CSS",
+          "React",
+          "Angular",
+          "Spring Boot"
+        ]
+      },
+      {
+        "title": "Databases & Backend",
+        "skills": [
+          "SQL",
+          "SQLite",
+          "MySQL",
+          "PostgreSQL",
+          "RESTful APIs",
+          "GraphQL"
+        ]
+      },
+      {
+        "title": "Other",
+        "skills": [
+          "Git",
+          "CI / CD (Github Actions)",
+          "Android",
+          "iOS",
+          "Gradle",
+          "SSH",
+          "Node.js",
+          "Bash"
+        ]
+      }
+    ]
+  },
+  "websites": {
+    "title": "Websites",
+    "items": [
+      {
+        "name": "RSS Reader",
+        "description": "A Vue.js application that allows users to read and manage RSS feeds, providing a clean and user-friendly interface.",
+        "link": "https://inoles.github.io/rss-reader/"
+      },
+      {
+        "name": "Movie Explorer",
+        "description": "A Vue.js application that allows users to search for movies, view details, and explore movie information.",
+        "link": "https://inoles.github.io/MovieExplorer/"
+      },
+      {
+        "name": "Minesweeper",
+        "description": "A classic Minesweeper game implemented in Svelte, allowing users to play the game in their browser.",
+        "link": "https://inoles.github.io/minesweeper/"
+      },
+      {
+        "name": "Skills Showcase",
+        "description": "Bootstrap-based website showcasing various skills and projects.",
+        "link": "https://inoles.github.io/SkillSet/"
+      },
+      {
+        "name": "Quote of the Day",
+        "description": "A simple Angular application that displays a random quote each day.",
+        "link": "https://inoles.github.io/quote-day-angular/"
+      }
+    ]
+  },
+  "experiences": {
+    "title": "Experience",
+    "history": [
+      {
+        "name": "Fencl Web Design",
+        "date": "January 2026 - Present",
+        "description": "Web Developer",
+        "link": "https://enlighteningall.com"
+      },
+      {
+        "name": "eLifeguard, Inc.",
+        "date": "March 2016 - January 2026",
+        "description": "Software Engineer",
+        "bullets": [
+          "Delivered 5 Android/iOS apps serving 750K+ total users with end-to-end ownership of design, development, testing, and releases",
+          "Modernized mobile apps (Kotlin/Compose, SwiftUI, MVVM), reducing complexity 25%",
+          "Built GitHub Actions and Python automation that eliminated ~80% of manual processes",
+          "Improved product quality with 87% automated test coverage and CI/CD quality gates",
+          "Collaborated with a designer and business stakeholders to refine UX and product requirements",
+          "Enhanced performance and backend workflows by optimizing Magento and WordPress integrations"
+        ],
+        "link": "https://elifeguard.com"
+      },
+      {
+        "name": "Brevard County Public Schools",
+        "date": "August 2022 - October 2022",
+        "description": "Volunteer IT Support Intern",
+        "bullets": [
+          "Assisted staff and students with hardware/software troubleshooting at one school campus",
+          "Loaded Windows OS images from the network onto 50+ laptops, ensuring consistency and functionality",
+          "Gained hands-on experience with server racks, hardware setup, and basic network configurations",
+          "Supported general IT operations, including device setup and maintenance"
+        ],
+        "link": "https://www.brevardschools.org"
+      },
+      {
+        "name": "IRI, The CoSort Company",
+        "date": "July 2015 - October 2015",
+        "description": "Software Tester Intern",
+        "bullets": [
+          "Automated data validation using 10 Shell scripts for regression testing",
+          "Developed and executed 10+ JCL scripts to support regression testing",
+          "Ensured custom implementations were aligned with main sort processes"
+        ],
+        "link": "https://www.iri.com"
+      },
+      {
+        "name": "The Computer Repair Zone",
+        "date": "March 2013 - May 2013",
+        "description": "Volunteer Computer Repair Technician",
+        "bullets": [
+          "Performed hardware diagnostics, repairs, and OS installations on PCs",
+          "Assisted customers with troubleshooting and basic technical support",
+          "Gained foundational hands-on experience that led to a career in software development"
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "text": "All rights reserved",
+    "builtWith": "Designed and built with Astro, TypeScript, and Tailwind CSS",
+    "license": "License"
+  }
+}

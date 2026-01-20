@@ -1,16 +1,12 @@
 ---
-interface Section {
+interface Education {
   name: string;
   date?: string;
   description: string;
   coursework?: string[];
 }
 
-interface Props {
-  sections: Section[];
-}
-
-const { sections } = Astro.props;
+const { sections } = Astro.props as { sections: Education[] };
 ---
 
 {sections.map(({ name, date, description, coursework }) => (
@@ -21,7 +17,7 @@ const { sections } = Astro.props;
     <h3 class="font-semibold text-gray-900 dark:text-white pb-1">{name}</h3>
 
     {date && (
-      <h3 class="italic text-gray-600 dark:text-gray-300 pb-1">{date}</h3>
+      <h4 class="italic text-gray-600 dark:text-gray-300 pb-1">{date}</h4>
     )}
 
     <p class="text-md text-gray-600 dark:text-gray-200 font-light mb-3">

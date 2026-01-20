@@ -1,26 +1,35 @@
 ---
 import GoogleAnalytics from '../components/GoogleAnalytics.astro'
 import '../base.css';
-import { title, description } from '../site_metadata.json';
 import { Font } from 'astro:assets';
+import { t } from '../utils/i18n.ts';
+
+const author = 'Jonathan Steele';
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
+    <title>{author} | {t('meta.role')}</title>
+    <meta name="description" content={t('meta.description')} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={`${author} | ${t('meta.role')}`} />
+    <meta property="og:description" content={t('meta.description')} />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content={`${author} | ${t('meta.role')}`} />
+    <meta name="twitter:description" content={t('meta.description')} />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="og:title" content={title} />
-    <meta name="og:description" content={description} />
-    <meta name="og:type" content="website" />
-    <title>{title}</title>
+
     <Font cssVariable="--font-inter" preload />
 
-     <!-- Google Analytics -->
-    <GoogleAnalytics measurementId={'G-CVE0ZBT5L4'} />
+    <GoogleAnalytics measurementId="G-CVE0ZBT5L4" />
   </head>
   <body>
     <slot />

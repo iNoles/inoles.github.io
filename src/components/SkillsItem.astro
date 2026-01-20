@@ -1,14 +1,10 @@
 ---
-interface Section {
+interface Skills {
   title: string;
   skills: string[];
 }
 
-interface Props {
-  sections: Section[];
-}
-
-const { sections } = Astro.props;
+const { sections } = Astro.props as { sections: Skills[] };
 ---
 
 {sections.map(({ title, skills }) => (

@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import { name, github, linkedin } from '../site_metadata.json';
+import { t } from '../utils/i18n.ts';
 import profile from '../../public/images/profile.jpg';
 import Typewriter from "astro-typewriter";
 ---
@@ -17,15 +17,15 @@ import Typewriter from "astro-typewriter";
     />
   </div>
   <div class="flex-none pt-6 md:pt-1 md:flex-1 md:pl-8">
-    <h1 class="text-5xl font-bold text-gray-900 dark:text-gray-100 transition-colors duration-200">{name}</h1>
+    <h1 class="text-5xl font-bold text-gray-900 dark:text-gray-100 transition-colors duration-200">Jonathan Steele</h1>
     <p class="opacity-80 mt-2 text-gray-700 dark:text-gray-300">
       <Typewriter
         messages={[
-          "Full Stack Developer",
-          "Mobile Developer",
-          "Software Engineer",
-          "Problem Solver",
-          "Team Collaborator"
+          t('header.animated.first'),
+          t('header.animated.second'),
+          t('header.animated.third'),
+          t('header.animated.fourth'),
+          t('header.animated.fifth')
         ]}
         writeSpeed={80}    
         deleteSpeed={40}   
@@ -36,8 +36,8 @@ import Typewriter from "astro-typewriter";
     </p>
     <ul class="mt-6 flex gap-4 flex-wrap">
       {[
-        { href: `https://github.com/${github}`, label: "GitHub", icon: "github" },
-        { href: linkedin, label: "LinkedIn", icon: "linkedin" },
+        { href: `https://github.com/inoles`, label: "GitHub", icon: "github" },
+        { href: `https://www.linkedin.com/in/jonathansoftwaredeveloper`, label: "LinkedIn", icon: "linkedin" },
         { href: "https://docs.google.com/document/d/1SJ2DIJDTYp_VTqL21_DZoIIEk0ZF2qLv9j462PdS2bY/edit?usp=sharing", label: "Resume", icon: null }
       ].map(({ href, label, icon }) => (
         <li>

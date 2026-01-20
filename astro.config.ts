@@ -1,12 +1,11 @@
 /* eslint-disable */
 import { defineConfig, fontProviders } from "astro/config";
-import yaml from "@rollup/plugin-yaml";
 import tailwindcss from "@tailwindcss/vite";
 import partytown from "@astrojs/partytown";
 
 export default defineConfig({
   vite: {
-    plugins: [yaml(), tailwindcss()],
+    plugins: [tailwindcss()],
   },
   experimental: {
     fonts: [

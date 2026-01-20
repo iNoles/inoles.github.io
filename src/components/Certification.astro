@@ -1,21 +1,14 @@
 ---
 import Section from './Section.astro';
 import SummaryItem from './SummaryItem.astro';
-import certifications from '../../certifications.yaml';
+import { t } from '../utils/i18n.ts';
 
-interface Certifications {
-  name: string;
-  date: string;
-  description: string;
-}
 ---
 
-<Section title="Certifications">
-  {certifications.map((certification: Certifications) => (
-    <SummaryItem
-      name={certification.name}
-      date={certification.date}
-      description={certification.description}
+<Section title={t('certifications.title')}>
+  <SummaryItem
+    name={t('certifications.name')}
+    date={t('certifications.date')}
+    description={t('certifications.description')}
   />
-  ))}
 </Section>

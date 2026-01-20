@@ -1,15 +1,15 @@
 ---
 import Section from './Section.astro';
-import { about } from '../site_metadata.json';
+import { t } from '../utils/i18n.ts';
 ---
 
-<Section title="About Me">
+<Section title={t('about.title')}>
   <div
     class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 
            rounded-2xl shadow-md p-6 transition hover:shadow-lg"
   >
     <div style="white-space: pre-line;">
-      <p>{about}</p>
+      <p>{t('about.description')}</p>
     </div>
   </div>
 </Section>

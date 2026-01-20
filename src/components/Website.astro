@@ -1,21 +1,23 @@
 ---
 import Section from './Section.astro';
 import SummaryItem from './SummaryItem.astro';
-import websites from '../../website.yaml';
+import { t } from '../utils/i18n.ts';
 
 interface Websites {
   name: string;
   link: string;
   description: string;
 }
+
+const websites = t('websites.items') as Websites[];
 ---
 
-<Section title="Website">
-{websites.map((website: Websites) => (
+<Section title={t('websites.title')}>
+  {websites.map((website: Websites) => (
     <SummaryItem
       name={website.name}
       link={website.link}
       description={website.description}
-  />
+    />
   ))}
 </Section>

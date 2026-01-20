@@ -1,9 +1,18 @@
 ---
 import Section from './Section.astro';
 import EducationItems from './EducationItems.astro';
-import educations from '../../educations.yaml';
+import { t } from '../utils/i18n.ts';
+
+// Pull section title and array from JSON
+const sectionTitle = t('educations.title');
+const sections = t('educations.history') as Array<{
+  name: string;
+  date: string;
+  description: string;
+  coursework: string[];
+}>;
 ---
 
-<Section title="Education">
-  <EducationItems sections={educations.sections} />
+<Section title={sectionTitle}>
+  <EducationItems sections={sections} />
 </Section>

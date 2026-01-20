@@ -1,7 +1,7 @@
 ---
 import Section from './Section.astro';
 import ExperienceItem from './ExperienceItem.astro';
-import experiences from '../../work-history.yaml';
+import { t } from '../utils/i18n.ts';
 
 interface Experience {
   name: string;
@@ -10,9 +10,13 @@ interface Experience {
   description: string;
   link?: string;
 }
+
+// Pull data from JSON via t()
+const sectionTitle = t('experiences.title');
+const experiences = t('experiences.history') as Experience[];
 ---
 
-<Section title="Experience">
+<Section title={sectionTitle}>
   {experiences.map((experience: Experience) => (
     <ExperienceItem
       name={experience.name}
