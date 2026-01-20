@@ -17,9 +17,8 @@ const experiences = t('experiences.history') as Experience[];
 ---
 
 <Section title={sectionTitle}>
-  {experiences.map((experience: Experience, idx) => (
+  {experiences.map((experience: Experience) => (
     <ExperienceItem
-      key={idx}
       name={experience.name}
       date={experience.date}
       bullets={experience.bullets}

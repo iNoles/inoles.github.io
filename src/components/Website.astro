@@ -13,9 +13,8 @@ const websites = t('websites.items') as Websites[];
 ---
 
 <Section title={t('websites.title')}>
-  {websites.map((website: Websites, idx) => (
+  {websites.map((website: Websites) => (
     <SummaryItem
-      key={idx}
       name={website.name}
       link={website.link}
       description={website.description}
