@@ -1,4 +1,4 @@
-import en_us from "../config/text.json";
+import en_us from '../config/text.json';
 
 // Single language for now
 const translations = en_us;
@@ -8,7 +8,7 @@ const translations = en_us;
  * Returns the key if missing
  */
 export const t = <T = string,>(path: string): T => {
-  const keys = path.split(".");
+  const keys = path.split('.');
   let value: any = translations;
 
   for (const key of keys) {
