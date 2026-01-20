@@ -27,9 +27,8 @@ const { sections } = Astro.props as { sections: Education[] };
 
     {coursework && coursework.length > 0 && (
       <div class="flex flex-wrap gap-2">
-        {coursework.map((course, idx) => (
+        {coursework.map((course) => (
           <span
-            key={idx}
             class="inline-block bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full
                    dark:bg-gray-600 dark:text-white hover:dark:bg-gray-500 hover:bg-gray-200 
                    transition-colors duration-150"
