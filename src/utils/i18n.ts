@@ -1,0 +1,22 @@
+import en_us from '../config/text.json';
+
+// Single language for now
+const translations = en_us;
+
+/**
+ * Global translation function
+ * Returns the key if missing
+ */
+export const t = <T = string>(path: string): T => {
+  const keys = path.split('.');
+  let value: any = translations;
+
+  for (const key of keys) {
+    if (value?.[key] === undefined) {
+      return path as unknown as T; // fallback
+    }
+    value = value[key];
+  }
+
+  return value as T;
+};

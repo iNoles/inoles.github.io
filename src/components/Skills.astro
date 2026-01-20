@@ -1,9 +1,10 @@
 ---
 import Section from './Section.astro';
 import SkillsItem from './SkillsItem.astro';
-import skills from '../../skills.yaml';
+import { t } from '../utils/i18n.ts';
 ---
 
-<Section title="Skills">
-   <SkillsItem sections={skills.sections} />
+<Section title={t('skills.title')}>
+  <SkillsItem sections={t('skills.sections')} />
 </Section>
+

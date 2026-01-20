@@ -1,12 +1,18 @@
 ---
+import { t } from '../utils/i18n.ts';
 const currentYear = new Date().getFullYear();
 ---
 <footer class="bg-gray-800 text-white py-4 mt-8">
-  <div class="container mx-auto text-center">
-    <p>&copy; {currentYear} Jonathan Steele. All rights reserved.</p>
-    <p>Designed and built with Astro, TypeScript, and Tailwind CSS</p>
+  <div class="container mx-auto text-center space-y-1">
+    <p>&copy; {currentYear} Jonathan Steele. {t('footer.text')}</p>
+    <p>{t('footer.builtWith')}</p>
     <p>
-      <a href="LICENSE.txt" class="!text-teal-300 dark:text-teal-300 underline hover:opacity-90">License</a>
+      <a 
+        href="LICENSE.txt" 
+        class="!text-teal-300 dark:text-teal-300 underline hover:opacity-90"
+      >
+        {t('footer.license')}
+      </a>
     </p>
   </div>
 </footer>
