@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets";
+
+export interface Website {
+  title: string;
+  description: string;
+  url: string;
+  repo: string;
+  thumbnail: string;
+  tech: string[];
+}
+
+const { title, description, url, repo, thumbnail, tech = [] } = Astro.props as Website;
+---
+<article class="flex flex-col border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition
+                bg-white dark:bg-gray-800 dark:border-gray-700">
+  
+  {/* Title */}
+  <h3 class="text-xl font-bold p-4 text-gray-800 dark:text-gray-100">
+    {title}
+  </h3>
+
+  {/* Thumbnail */}
+  {thumbnail && (
+  <Image
+    src={thumbnail}
+    alt={title}
+    width={800}
+    height={450}
+    class="w-full h-48 object-cover"
+    loading="lazy"
+  />
+)}
+
+{/* Content */}
+<div class="flex flex-col flex-1 p-4">
+  {/* Description */}
+  <p class="text-gray-600 dark:text-gray-300 mb-3 flex-1 text-sm">{description}</p>
+
+  {/* Tech tags */}
+  {tech.length > 0 && (
+    <div class="flex flex-wrap gap-2 mb-4">
+      {tech.map(t => (
+        <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-1 rounded text-xs">{t}</span>
+      ))}
+    </div>
+  )}
+
+  {/* Buttons */}
+  <div class="mt-auto flex gap-3">
+    {/* GitHub Button */}
+    {repo && (
+      <a href={repo} target="_blank" rel="noopener"
+        class="flex-1 text-center py-2 rounded font-semibold text-white bg-[#24292f] hover:bg-[#3b3f44] transition duration-300">
+        GitHub
+      </a>
+    )}
+
+  {/* Live Demo Button */}
+  {url && (
+    <a href={url} target="_blank" rel="noopener"
+       class="flex-1 text-center py-2 rounded font-semibold bg-purple-900 hover:bg-purple-800 dark:bg-purple-900 dark:hover:bg-purple-800 transition duration-300">
+      Live Demo
+    </a>
+  )}
+</div>
+</div>
+</article>

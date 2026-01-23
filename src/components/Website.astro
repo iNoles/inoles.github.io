@@ -1,23 +1,23 @@
 ---
 import Section from './Section.astro';
-import SummaryItem from './SummaryItem.astro';
+import WebsiteCard from '../components/WebsiteCard.astro';
+import type { Website } from '../components/WebsiteCard.astro';
 import { t } from '../utils/i18n.ts';
 
-interface Websites {
-  name: string;
-  link: string;
-  description: string;
-}
-
-const websites = t('websites.items') as Websites[];
+const websites = t('websites.items') as Website[];
 ---
 
 <Section title={t('websites.title')}>
-  {websites.map((website: Websites) => (
-    <SummaryItem
-      name={website.name}
-      link={website.link}
-      description={website.description}
-    />
-  ))}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {websites.map(website => (
+      <WebsiteCard
+        title={website.title}
+        description={website.description}
+        url={website.url}
+        repo={website.repo}
+        thumbnail={website.thumbnail}
+        tech={website.tech}
+      />
+    ))}
+  </div>
 </Section>
