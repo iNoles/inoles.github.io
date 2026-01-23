@@ -118,29 +118,36 @@
     "title": "Websites",
     "items": [
       {
-        "name": "RSS Reader",
-        "description": "A Vue.js application that allows users to read and manage RSS feeds, providing a clean and user-friendly interface.",
-        "link": "https://inoles.github.io/rss-reader/"
+        "title": "TaskForgeAppBlazor",
+        "description": "A task management application built with Blazor WebAssembly and ASP.NET Core APIs, featuring structured state management, CRUD workflows, and production-style architecture.",
+        "url": "https://inoles.github.io/TaskForgeAppBlazor/",
+        "repo": "https://github.com/iNoles/TaskForgeAppBlazor",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/TaskForgeAppBlazor/refs/heads/main/taskforge.png",
+        "tech": ["C#", "Blazor WebAssembly", "ASP.NET Core", "Bootstrap", "JavaScript"]
       },
       {
-        "name": "Movie Explorer",
-        "description": "A Vue.js application that allows users to search for movies, view details, and explore movie information.",
-        "link": "https://inoles.github.io/MovieExplorer/"
+        "title": "Coinkick",
+        "description": "A responsive dashboard that displays live cryptocurrency prices, 24-hour changes, and interactive chart views. Designed with extensibility in mind to support multiple data domains.",
+        "url": "https://inoles.github.io/coinkick/",
+        "repo": "https://github.com/iNoles/coinkick",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/coinkick/refs/heads/main/cypto.png",
+        "tech": ["React", "Vue", "JavaScript", "Tailwind CSS", "Chart.js"]
       },
       {
-        "name": "Minesweeper",
-        "description": "A classic Minesweeper game implemented in Svelte, allowing users to play the game in their browser.",
-        "link": "https://inoles.github.io/minesweeper/"
+        "title": "MovieExplorer",
+        "description": "A responsive movie discovery website that allows users to search, browse, and explore movie details through an intuitive, visually rich interface.",
+        "url": "https://inoles.github.io/MovieExplorer/",
+        "repo": "https://github.com/iNoles/MovieExplorer",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/MovieExplorer/refs/heads/main/screenshots/main.png",
+        "tech": ["Vue.js", "TypeScript", "Tailwind CSS"]
       },
       {
-        "name": "Skills Showcase",
-        "description": "Bootstrap-based website showcasing various skills and projects.",
-        "link": "https://inoles.github.io/SkillSet/"
-      },
-      {
-        "name": "Quote of the Day",
-        "description": "A simple Angular application that displays a random quote each day.",
-        "link": "https://inoles.github.io/quote-day-angular/"
+        "title": "SpaceXLaunchBlazor",
+        "description": "A Blazor Server web app that consumes public APIs to display and explore SpaceX launch data with a clean, focused UI.",
+        "url": "https://spacexlaunch.tryasp.net/",
+        "repo": "https://github.com/iNoles/SpaceXLaunchBlazor",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/SpaceXLaunchBlazor/refs/heads/main/spacex.png",
+        "tech": ["C#", "Blazor Server", "ASP.NET Core", "Public APIs", "Tailwind CSS"]
       }
     ]
   },
