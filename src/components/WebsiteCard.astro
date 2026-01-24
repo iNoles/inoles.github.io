@@ -48,21 +48,20 @@ const { title, description, url, repo, thumbnail, tech = [] } = Astro.props as W
 
   {/* Buttons */}
   <div class="mt-auto flex gap-3">
-    {/* GitHub Button */}
-    {repo && (
-      <a href={repo} target="_blank" rel="noopener"
-        class="flex-1 text-center py-2 rounded font-semibold text-white bg-[#24292f] hover:bg-[#3b3f44] transition duration-300">
-        GitHub
-      </a>
-    )}
-
-  {/* Live Demo Button */}
-  {url && (
-    <a href={url} target="_blank" rel="noopener"
-       class="flex-1 text-center py-2 rounded font-semibold bg-purple-900 hover:bg-purple-800 dark:bg-purple-900 dark:hover:bg-purple-800 transition duration-300">
+    {/* Live Demo Button (Primary) */}
+    {url && (
+    <a href={url} target="_blank" rel="noopener" aria-label={`Live demo for ${title}`} class="flex-1 text-center rounded-xl px-6 py-3 font-semibold bg-violet-600 text-white hover:bg-violet-700 transition-colors duration-150 shadow-md shadow-violet-600/30">
       Live Demo
     </a>
   )}
+
+  {/* GitHub Button (Secondary) */}
+  {repo && (
+  <a href={repo} target="_blank" rel="noopener" aria-label={`${title} GitHub Repository`} class="flex-1 text-center py-2 rounded-lg font-semibold border border-teal-600 text-teal-700 transition-colors duration-150 shadow-md shadow-teal-600/30 dark:border-teal-400 dark:text-teal-300 hover:bg-gray-100 dark:hover:bg-gray-600">
+    GitHub
+  </a>
+  )}
+</div>
 </div>
 </div>
 </article>
