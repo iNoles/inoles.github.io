@@ -1,40 +1,24 @@
 ---
 import Section from './Section.astro';
 import SummaryItem from './SummaryItem.astro';
-import { fetchWithRetry } from '../utils/fetchWithRetry';
+import { t } from '../utils/i18n.ts';
 
-// Define the shape of a GitHub repo object
-interface GitHubRepo {
-  id: number;
+interface Projects {
   name: string;
   description: string;
-  html_url: string;
+  link: string;
 }
 
-let repos: GitHubRepo[] = []; // Initialize repos as an empty array
-
-const username = 'iNoles';
-const token = import.meta.env.GITHUB_TOKEN; // Ensure this token is set in the environment variables
-try {
-  const response = await fetchWithRetry(username, token, 3, 2000); // 3 retries with 2 seconds between retries
-  const data = await response.json();
-  repos = data.items || [];
-} catch (error) {
-  if (error instanceof Error) {
-    console.error(error.message);
-  } else {
-    console.error(String(error));
-  }
-}
+const projects = t('projects.items') as Projects[];
 ---
 
-<Section title="Projects">
-   {repos.map((repo) => (
-      <SummaryItem
-        name={repo.name}
-        description={repo.description}
-        link={repo.html_url}
-      />
+<Section title={t('projects.title')}>
+   {projects.map((project) => (
+    <SummaryItem
+      name={project.title}
+      description={project.description}
+      link={project.repo}
+    />
   ))}
   <SummaryItem
     name="Lifeguard Times (Google Play)"

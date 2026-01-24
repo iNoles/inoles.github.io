@@ -151,6 +151,46 @@
       }
     ]
   },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "CareerFlow",
+        "description": "An Android application built with Jetpack Compose that provides AI-driven career guidance, resume insights, and role recommendations. Focuses on modern Android architecture and real-world AI integration.",
+        "repo": "https://github.com/iNoles/CareerFlow"
+      },
+      {
+        "title": "Taskify",
+        "description": "A productivity-focused Android app featuring task creation, updates, and offline persistence. Built using modern Android architecture with clean separation of concerns.",
+        "repo": "https://github.com/iNoles/Taskify"
+      },
+      {
+        "title": "TopCoinTrack",
+        "description": "A real-time cryptocurrency tracking app that fetches and displays market data with sorting, error handling, and scalable UI state management.",
+        "repo": "https://github.com/iNoles/TopCoinTrack"
+      },
+      {
+        "title": "HackerNews",
+        "description": "A cross-platform Hacker News client built with .NET MAUI for Android and iOS. Features real-time story updates via Firebase and follows MVVM architecture.",
+        "repo": "https://github.com/iNoles/HackerNews"
+      },
+      {
+        "title": "SpringTasker",
+        "description": "A RESTful backend service for managing tasks and users. Designed to support mobile or web clients with clean API design and scalable backend architecture.",
+        "repo": "https://github.com/iNoles/SpringTasker"
+      },
+      {
+        "title": "ShopShowcase",
+        "description": "A .NET MAUI application integrating with Shopify's Storefront GraphQL API to browse products and manage storefront data across platforms.",
+        "repo": "https://github.com/iNoles/ShopShowcase"
+      },
+      {
+        "title": "BookTracker",
+        "description": "A full-stack ASP.NET Core project for tracking and managing books. Includes authentication, CRUD operations, and REST API endpoints to support mobile or web clients.",
+        "repo": "https://github.com/iNoles/BookTracker"
+      }
+    ]
+  },
   "experiences": {
     "title": "Experience",
     "history": [
