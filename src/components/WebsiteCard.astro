@@ -50,7 +50,7 @@ const { title, description, url, repo, thumbnail, tech = [] } = Astro.props as W
   <div class="mt-auto flex gap-3">
     {/* Live Demo Button (Primary) */}
     {url && (
-    <a href={url} target="_blank" rel="noopener" aria-label={`Live demo for ${title}`} class="flex-1 text-center rounded-xl px-6 py-3 font-semibold bg-violet-600 text-white hover:bg-violet-700 transition-colors duration-150 shadow-md shadow-violet-600/30">
+    <a href={url} target="_blank" rel="noopener" aria-label={`Live demo for ${title}`} class="flex-1 text-center rounded-xl px-6 py-3 font-semibold bg-violet-600 !text-white hover:bg-violet-700 transition-colors duration-150 shadow-md shadow-violet-600/30">
       Live Demo
     </a>
   )}
