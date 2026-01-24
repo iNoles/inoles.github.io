@@ -44,6 +44,7 @@ import Typewriter from "astro-typewriter";
           <a
             class="inline-flex items-center px-4 py-2 text-xs font-semibold uppercase tracking-wider border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-600 hover:border-gray-500 dark:hover:border-gray-500 transition-colors duration-150"
             href={href}
+            aria-label={label === "GitHub" ? "Jonathan Steele GitHub profile" : label}
           >
             {icon === "github" && (
               <svg aria-hidden="true" class="lucide lucide-github mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
