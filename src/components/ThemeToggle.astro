@@ -1,15 +1,28 @@
 <div
   id="theme-toggle"
-  class="cursor-pointer select-none text-black dark:text-white transition-colors"
+  class="cursor-pointer select-none p-1 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
   aria-label="Toggle theme"
 >
-  <svg
-    viewBox="0 0 24 24"
-    class="w-4 h-4 transition-transform duration-300 dark:rotate-180"
-    fill="currentColor"
-  >
-    <!-- half-moon / circle hybrid -->
-    <path d="M12 2a9 9 0 1 0 0 18a7 7 0 1 1 0-18z" />
+  <svg viewBox="0 0 24 24" class="w-5 h-5 transition-transform duration-300">
+    <!-- left half -->
+    <path
+      d="M12 2a10 10 0 0 0 0 20z"
+      class="fill-white dark:fill-black"
+    />
+    <!-- right half -->
+    <path
+      d="M12 2a10 10 0 0 1 0 20z"
+      class="fill-black dark:fill-white"
+    />
+    <!-- outline -->
+    <circle
+      cx="12"
+      cy="12"
+      r="10"
+      fill="none"
+      class="stroke-gray-700 dark:stroke-gray-200"
+      stroke-width="1"
+    />
   </svg>
 </div>
 
@@ -17,9 +30,7 @@
   const root = document.documentElement;
   const saved = localStorage.getItem('theme');
 
-  if (saved === 'dark') {
-    root.classList.add('dark');
-  }
+  if (saved === 'dark') root.classList.add('dark');
 
   document
     .getElementById('theme-toggle')
