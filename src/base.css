@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Tailwind v4.1 manual dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -25,13 +28,22 @@
       /* Dark theme variables override */
       --bg-color: #1e1e2f;
       --text-color: #e5e5e5;
-      --header-color: #a390c6;
-      --link-color: #5fc8c6;
-      --subtext-color: #7b6991;
+      --header-color: #c8aaff;
+      --link-color: #00ffff;
+      --subtext-color: #9a87b5;
       --card-bg: #2a2a3e;
     }
   }
-
+  
+  .dark {
+    --bg-color: #1e1e2f;
+    --text-color: #e5e5e5;
+    --header-color: #a390c6;
+    --link-color: #00ffff;
+    --subtext-color: #7b6991;
+    --card-bg: #2a2a3e;
+  }
+  
   *,
   ::after,
   ::before,
