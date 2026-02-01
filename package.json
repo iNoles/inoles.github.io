@@ -4,10 +4,10 @@
   "author": "Jonathan Steele",
   "dependencies": {
     "@astrojs/partytown": "^2.1.4",
-    "@tailwindcss/vite": "^4.1.17",
+    "@tailwindcss/vite": "^4.1.18",
     "astro": "5.17.1",
     "astro-typewriter": "^1.1.0",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.18"
   },
   "scripts": {
     "dev": "astro dev",
