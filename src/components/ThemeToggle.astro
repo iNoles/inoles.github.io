@@ -27,8 +27,14 @@
 </div>
 
 <script is:inline>
-  document.getElementById('theme-toggle')
-    ?.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-    });
+  toggle?.addEventListener('click', () => {
+  const root = document.documentElement;
+  if (root.classList.contains('dark')) {
+    root.classList.remove('dark');
+    root.classList.add('light');
+  } else {
+    root.classList.remove('light');
+    root.classList.add('dark');
+  }
+});
 </script>

@@ -44,6 +44,12 @@
    --subtext-color: #7b6991;
    --card-bg: #2a2a3e;
 }
+
+/* Manual light toggle (after dark) */
+html.light {
+  --bg-color: #e5e5e5 !important;
+  --text-color: #2c2c3e !important;
+}
   
 *,::after,
   ::before,
