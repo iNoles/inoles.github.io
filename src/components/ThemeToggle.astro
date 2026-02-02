@@ -27,15 +27,10 @@
 </div>
 
 <script is:inline>
-  const toggle = document.getElementById('theme-toggle');
-  toggle?.addEventListener('click', () => {
-  const root = document.documentElement;
-  if (root.classList.contains('dark')) {
-    root.classList.remove('dark');
-    root.classList.add('light');
-  } else {
-    root.classList.remove('light');
-    root.classList.add('dark');
-  }
+const toggle = document.getElementById('theme-toggle');
+const root = document.documentElement;
+
+toggle?.addEventListener('click', () => {
+  root.classList.toggle('dark'); // just toggle Tailwind dark class
 });
 </script>
