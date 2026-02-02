@@ -36,13 +36,13 @@
   }
   
 /* MANUAL dark mode (toggle) */
-:root.dark {
-  --bg-color: #1e1e2f;
-  --text-color: #e5e5e5;
-  --header-color: #a390c6;
-  --link-color: #5fc8c6;
-  --subtext-color: #7b6991;
-  --card-bg: #2a2a3e;
+ html.dark {
+   --bg-color: #1e1e2f;
+   --text-color: #e5e5e5;
+   --header-color: #a390c6;
+   --link-color: #5fc8c6;
+   --subtext-color: #7b6991;
+   --card-bg: #2a2a3e;
 }
   
 *,::after,
