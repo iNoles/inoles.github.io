@@ -27,15 +27,21 @@
 </div>
 
 <script is:inline>
-  const toggle = document.getElementById('theme-toggle');
-  toggle?.addEventListener('click', () => {
-  const root = document.documentElement;
-  if (root.classList.contains('dark')) {
-    root.classList.remove('dark');
-    root.classList.add('light');
-  } else {
-    root.classList.remove('light');
-    root.classList.add('dark');
-  }
+const toggle = document.getElementById('theme-toggle');
+const root = document.documentElement;
+
+// Track manual toggle in memory
+let isDark = false;
+
+// Optional: system preference
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+isDark = prefersDark;
+
+// Apply initial theme
+root.classList.toggle('dark', isDark);
+
+toggle?.addEventListener('click', () => {
+  isDark = !isDark;
+  root.classList.toggle('dark', isDark);
 });
 </script>
