@@ -3,10 +3,9 @@ import { Image } from 'astro:assets';
 import { t } from '../utils/i18n.ts';
 import profile from '../../public/images/profile.jpg';
 import Typewriter from "astro-typewriter";
-import ThemeToggle from './ThemeToggle.astro';
 ---
 
-<header class="relative custom-header block mb-6 md:flex bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md rounded-2xl p-6 md:p-8 transition-colors duration-300">
+<header class="custom-header block mb-6 md:flex bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md rounded-2xl p-6 md:p-8 transition-colors duration-300">
   <div class="w-full max-w-37 flex-shrink-0">
     <Image
       src={profile}
@@ -72,7 +71,4 @@ import ThemeToggle from './ThemeToggle.astro';
     </span></li>
     </ul>
   </div>
-  <div class="absolute top-4 right-4">
-    <ThemeToggle />
-</div>
 </header>
