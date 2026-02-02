@@ -30,7 +30,18 @@
 const toggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
+// Track manual toggle in memory
+let isDark = false;
+
+// Optional: system preference
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+isDark = prefersDark;
+
+// Apply initial theme
+root.classList.toggle('dark', isDark);
+
 toggle?.addEventListener('click', () => {
-  root.classList.toggle('dark'); // just toggle Tailwind dark class
+  isDark = !isDark;
+  root.classList.toggle('dark', isDark);
 });
 </script>
