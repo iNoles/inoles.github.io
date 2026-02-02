@@ -35,22 +35,6 @@
     }
   }
   
-/* MANUAL dark mode (toggle) */
- html.dark {
-   --bg-color: #1e1e2f;
-   --text-color: #e5e5e5;
-   --header-color: #a390c6;
-   --link-color: #5fc8c6;
-   --subtext-color: #7b6991;
-   --card-bg: #2a2a3e;
-}
-
-/* Manual light toggle (after dark) */
-html.light {
-  --bg-color: #e5e5e5 !important;
-  --text-color: #2c2c3e !important;
-}
-  
 *,::after,
   ::before,
   ::backdrop,
