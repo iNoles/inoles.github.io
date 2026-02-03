@@ -17,7 +17,6 @@
     --header-color: #5c4b7d;
     --link-color: #153837;
     --subtext-color: #8d7ca8;
-    --card-bg: #ffffff;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -28,7 +27,6 @@
       --header-color: #c8aaff;
       --link-color: #00ffff;
       --subtext-color: #9a87b5;
-      --card-bg: #2a2a3e;
     }
   }
   
@@ -54,12 +52,6 @@ h3 {
 a,
 button {
   color: var(--link-color);
-}
-
-.card {
-  background-color: var(--card-bg);
-  padding: 1rem;
-  border-radius: 8px;
 }
 
 .subtext {
