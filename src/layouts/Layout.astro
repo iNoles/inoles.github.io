@@ -15,14 +15,20 @@ const author = 'Jonathan Steele';
     <title>{author} | {t('meta.role')}</title>
     <meta name="description" content={t('meta.description')} />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content={`${author} | ${t('meta.role')}`} />
-    <meta property="og:description" content={t('meta.description')} />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter -->
-    <meta name="twitter:title" content={`${author} | ${t('meta.role')}`} />
-    <meta name="twitter:description" content={t('meta.description')} />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://inoles.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{author} | {t('meta.role')}">
+    <meta property="og:description" content={t('meta.description')}>
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="inoles.github.io">
+    <meta property="twitter:url" content="https://inoles.github.io/">
+    <meta name="twitter:title" content="{author} | {t('meta.role')}">
+    <meta name="twitter:description" content={t('meta.description')}>
+    <meta name="twitter:image" content="">
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
