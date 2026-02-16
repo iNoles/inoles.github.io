@@ -127,6 +127,22 @@
         "tech": ["C#", "Blazor WebAssembly", "ASP.NET Core", "Bootstrap", "JavaScript"]
       },
       {
+        "title": "Thrill Track",
+        "description": "A theme park ride explorer built with React, Bun, and Supabase, featuring structured data views, filtering, and detailed ride insights including thrill ratings, ride types, and park information."
+        "url": "https://inoles.github.io/ThrillTrack/",
+        "repo": "https://github.com/iNoles/ThrillTrack",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/ThrillTrack/refs/heads/main/main.png",
+        "tech": ["React", "TypeScript", "Bootstrap", "Bun", "Supabase"]
+      },
+      {
+        "title": "SpaceXLaunchBlazor",
+        "description": "A Blazor Server web app that consumes public APIs to display and explore SpaceX launch data with a clean, focused UI.",
+        "url": "https://spacexlaunch.tryasp.net/",
+        "repo": "https://github.com/iNoles/SpaceXLaunchBlazor",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/SpaceXLaunchBlazor/refs/heads/main/spacex.png",
+        "tech": ["C#", "Blazor Server", "ASP.NET Core", "Public APIs", "Tailwind CSS"]
+      },
+      {
         "title": "Coinkick",
         "description": "A responsive dashboard that displays live cryptocurrency prices, 24-hour changes, and interactive chart views. Designed with extensibility in mind to support multiple data domains.",
         "url": "https://inoles.github.io/coinkick/",
@@ -141,14 +157,6 @@
         "repo": "https://github.com/iNoles/MovieExplorer",
         "thumbnail": "https://raw.githubusercontent.com/iNoles/MovieExplorer/refs/heads/main/screenshots/main.png",
         "tech": ["Vue.js", "TypeScript", "Tailwind CSS"]
-      },
-      {
-        "title": "SpaceXLaunchBlazor",
-        "description": "A Blazor Server web app that consumes public APIs to display and explore SpaceX launch data with a clean, focused UI.",
-        "url": "https://spacexlaunch.tryasp.net/",
-        "repo": "https://github.com/iNoles/SpaceXLaunchBlazor",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/SpaceXLaunchBlazor/refs/heads/main/spacex.png",
-        "tech": ["C#", "Blazor Server", "ASP.NET Core", "Public APIs", "Tailwind CSS"]
       }
     ]
   },
