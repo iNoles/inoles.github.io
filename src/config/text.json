@@ -128,7 +128,7 @@
       },
       {
         "title": "Thrill Track",
-        "description": "A theme park ride explorer built with React, Bun, and Supabase, featuring structured data views, filtering, and detailed ride insights including thrill ratings, ride types, and park information."
+        "description": "A theme park ride explorer built with React, Bun, and Supabase, featuring structured data views, filtering, and detailed ride insights including thrill ratings, ride types, and park information.",
         "url": "https://inoles.github.io/ThrillTrack/",
         "repo": "https://github.com/iNoles/ThrillTrack",
         "thumbnail": "https://raw.githubusercontent.com/iNoles/ThrillTrack/refs/heads/main/main.png",
