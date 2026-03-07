@@ -207,7 +207,12 @@
         "name": "Fencl Web Design",
         "date": "January 2026 - March 2026",
         "description": "Web Developer",
-        "link": "https://enlighteningall.com"
+        "link": "https://enlighteningall.com",
+        "bullets": [
+          "Enhanced 5+ full‑stack PHP applications, improving front‑end responsiveness",
+          "Diagnosed and resolved production issues, reducing client‑reported bugs and improving uptime",
+          "Aligned scope and timelines with project managers to deliver full‑stack features on schedule"
+        ]
       },
       {
         "name": "eLifeguard, Inc.",
