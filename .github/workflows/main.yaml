@@ -31,24 +31,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Set up Bun
-        uses: oven-sh/setup-bun@v2
-
-      - name: Restore Bun cache
-        uses: actions/cache@v5
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-         path: ~/.bun/install/cache
-         key: ${{ runner.os }}-bun-${{ hashFiles('bun.lockb') }}
-         restore-keys: |
-           ${{ runner.os }}-bun-
+          node-version: 22
 
+      # Install pnpm globally
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+     # Cache pnpm store for faster installs
+      - name: Cache pnpm store
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      # Install dependencies
       - name: Install dependencies
-        run: bun install
+        run: pnpm install
 
       - name: Build Astro
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bun run build
+        run: pnpm run build
 
       - name: Copy LICENSE file into deploy directory
         run: cp LICENSE.txt dist/ # Copies LICENSE file into the build folder before deploying
