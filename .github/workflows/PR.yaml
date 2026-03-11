@@ -18,7 +18,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 22
-          cache: 'pnpm'
+
+      # Install pnpm globally
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       # Cache pnpm store for faster installs
       - name: Cache pnpm store
@@ -28,10 +31,6 @@ jobs:
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-
-
-       # Install pnpm globally
-      - name: Install pnpm
-        run: npm install -g pnpm
 
       # Install project dependencies
       - name: Install dependencies
