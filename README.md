@@ -1,27 +1,29 @@
 # 🌌 Developer Portfolio Site
 
-![Astro](https://img.shields.io/badge/Framework-Astro.js-blue?logo=astro)
-![Tailwind](https://img.shields.io/badge/Styled%20With-TailwindCSS-blue?logo=tailwindcss)
-![Bun](https://img.shields.io/badge/Built%20With-Bun.sh-yellow?logo=bun)
+![Astro](https://img.shields.io/badge/Framework-Astro-BC52EE?logo=astro&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Styled_with-TailwindCSS-38BDF8?logo=tailwindcss&logoColor=white)
+![pnpm](https://img.shields.io/badge/Package_Manager-pnpm-F69220?logo=pnpm&logoColor=white)
+![TypeScript](https://img.shields.io/badge/Language-TypeScript-3178C6?logo=typescript&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![License](https://img.shields.io/github/license/iNoles/inoles.github.io)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
 
-Welcome to my developer portfolio built with **Astro.js**, styled using **TailwindCSS**, and powered by **Bun.sh** for blazing-fast performance! 🚀
+A fast, modern developer portfolio built with Astro v6, styled using TailwindCSS, and powered by pnpm for efficient dependency management. Optimized for performance, accessibility, and clean modular structure.
 
 ## ✨ Features
 
-- **Astro.js Framework** for building a lightweight static site
-- **TailwindCSS** for modern, responsive, and custom UI design
-- **Bun.sh** for ultra-fast server-side rendering and bundling
-- **Responsive Design** to look great on any device
-- **SEO Optimized** to improve search engine visibility
-- **Modular Code** to easily expand and maintain
+- Astro v6 for ultra‑fast static site generation
+- TailwindCSS for responsive, utility‑first styling
+- pnpm for efficient, disk‑optimized package management
+- SEO‑optimized pages and metadata
+- Responsive design across all devices
+- Modular components for easy maintenance and expansion
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- [Bun.sh](https://bun.sh/) installed.
+- pnpm installed
+- Node.js 22+
 
 ### Installation
 
@@ -32,17 +34,17 @@ Welcome to my developer portfolio built with **Astro.js**, styled using **Tailwi
    cd inoles.github.io
    ```
 
-2. Install dependencies using Bun:
+2. Install dependencies using pnpm:
 
    ```bash
-   bun install
+   pnpm install
    ```
 
 ### Available Scripts
 
-- `bun dev`: Start the development server.
-- `bun build`: Create a production build.
-- `bun preview`: Preview the production build.
+- `pnpm dev`: Start the development server.
+- `pnpm build`: Create a production build.
+- `pnpm preview`: Preview the production build.
 
 ### Contributing
 
