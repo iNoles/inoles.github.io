@@ -4,5 +4,10 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["**/*.ts", "**/*.astro"]
+  "include": [
+    "src",
+    "astro.config.*",
+    "**/*.astro",
+    "**/*.ts"
+  ]
 }
