@@ -46,7 +46,10 @@ A fast, modern developer portfolio built with Astro v6, styled using TailwindCSS
 - `pnpm build`: Create a production build.
 - `pnpm preview`: Preview the production build.
 
-### Contributing
+## Screen Shot
+![Main](main.png)
+
+## Contributing
 
 Contributions are welcome! Here's how you can help:
 
