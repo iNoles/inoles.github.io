@@ -204,20 +204,6 @@
     "title": "Experience",
     "history": [
       {
-        "name": "eLifeguard, Inc.",
-        "date": "March 2016 - Present",
-        "description": "Mobile Engineer",
-        "bullets": [
-          "Delivered 5 Android/iOS apps serving 750K+ total users with end-to-end ownership of design, development, testing, and releases",
-          "Modernized mobile apps (Kotlin/Compose, SwiftUI, MVVM), reducing complexity 25%",
-          "Built GitHub Actions and Python automation that eliminated ~80% of manual processes",
-          "Improved product quality with 87% automated test coverage and CI/CD quality gates",
-          "Collaborated with a designer and business stakeholders to refine UX and product requirements",
-          "Enhanced performance and backend workflows by optimizing Magento and WordPress integrations"
-        ],
-        "link": "https://elifeguard.com"
-      },
-      {
         "name": "Fencl Web Design",
         "date": "January 2026 - March 2026",
         "description": "Web Developer",
@@ -228,6 +214,20 @@
           "Delivered full-stack features on schedule, aligning scope with project managers"
         ]
       },
+      {
+        "name": "eLifeguard, Inc.",
+        "date": "March 2016 - Jan 2026",
+        "description": "Mobile Engineer",
+        "bullets": [
+          "Delivered 5 Android/iOS apps serving 750K+ total users with end-to-end ownership of design, development, testing, and releases",
+          "Modernized mobile apps (Kotlin/Compose, SwiftUI, MVVM), reducing complexity 25%",
+          "Built GitHub Actions and Python automation that eliminated ~80% of manual processes",
+          "Improved product quality with 87% automated test coverage and CI/CD quality gates",
+          "Collaborated with a designer and business stakeholders to refine UX and product requirements",
+          "Enhanced performance and backend workflows by optimizing Magento and WordPress integrations"
+        ],
+        "link": "https://elifeguard.com"
+      }
       {
         "name": "Brevard County Public Schools",
         "date": "August 2022 - October 2022",
