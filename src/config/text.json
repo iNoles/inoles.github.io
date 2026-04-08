@@ -206,18 +206,18 @@
       {
         "name": "Fencl Web Design",
         "date": "January 2026 - March 2026",
-        "description": "Web Developer",
+        "description": "Full-Stack Software Developer",
         "link": "https://enlighteningall.com",
         "bullets": [
-          "Improved 5+ PHP/MySQL applications, boosting performance and responsiveness with Bootstrap",
-          "Resolved production issues, reducing client-reported bugs and improving uptime",
-          "Delivered full-stack features on schedule, aligning scope with project managers"
+          "Optimized 5+ client web apps, improving load times 25% and UI responsiveness with Bootstrap",
+          "Resolved 15+ production issues, cutting client‑reported bugs by 30% and raising uptime to 99.9%",
+          "Delivered 5+ full‑stack PHP/MySQL features on schedule in coordination with project managers"
         ]
       },
       {
         "name": "eLifeguard, Inc.",
         "date": "March 2016 - Jan 2026",
-        "description": "Mobile Engineer",
+        "description": "Software Engineer",
         "bullets": [
           "Delivered 5 Android/iOS apps serving 750K+ total users with end-to-end ownership of design, development, testing, and releases",
           "Modernized mobile apps (Kotlin/Compose, SwiftUI, MVVM), reducing complexity 25%",
