@@ -163,7 +163,7 @@
         "description": "A lightweight API testing tool built with Go, Wails, React, and Tailwind. Supports quick GET/POST requests with a clean, minimal interface for inspecting responses.",
         "url": "https://inoles.github.io/GoTesty/",
         "repo": "https://github.com/iNoles/GoTesty",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/GoTesty/refs/heads/main/screenshot.png",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/GoTesty/refs/heads/main/main.png",
         "tech": ["Go", "Wails", "React", "Tailwind CSS", "TypeScript"]
       }
     ]
