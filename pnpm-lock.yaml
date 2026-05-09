@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@astrojs/partytown':
-        specifier: ^2.1.4
+        specifier: 2.1.7
         version: 2.1.7
       '@tailwindcss/vite':
         specifier: ^4.1.18
