@@ -57,60 +57,79 @@
     "sections": [
       {
         "title": "Programming Languages",
+        "description": "Fluent across systems, backend, mobile, and modern application development",
         "skills": [
           "C++",
           "C",
           "C#",
+          "Java",
           "Kotlin",
           "Swift",
-          "Java",
+          "Python",
           "JavaScript",
           "TypeScript",
-          "Python",
           "PHP"
         ]
       },
       {
-        "title": "Frameworks & Libraries",
+        "title": "Backend & Systems",
+        "description": "Designing reliable, scalable, and high-performance backend systems across multiple platforms",
         "skills": [
-          "Jetpack Compose",
-          "UIKit",
-          "SwiftUI",
           ".NET Core",
           ".NET MAUI",
           "ASP.NET Core",
-          "Vue",
-          "Astro",
-          "Svelte",
-          "Tailwind CSS",
-          "React",
-          "Angular",
-          "Spring Boot"
+          "RESTful APIs",
+          "GraphQL",
+          "Node.js",
+          "Bash",
+          "SSH",
+          "Gradle",
+          "Linux"
         ]
       },
       {
-        "title": "Databases & Backend",
+        "title": "Frontend",
+        "description": "Building responsive, modern interfaces with strong attention to UX and performance",
+        "skills": [
+          "Vue",
+          "Astro",
+          "Svelte",
+          "React",
+          "Angular",
+          "Tailwind CSS",
+          "Jetpack Compose",
+          "SwiftUI",
+          "UIKit"
+        ]
+      },
+      {
+        "title": "Databases",
+        "description": "Modeling, optimizing, and maintaining relational data systems for production workloads",
         "skills": [
           "SQL",
           "SQLite",
           "MS SQL Server",
           "MySQL",
-          "PostgreSQL",
-          "RESTful APIs",
-          "GraphQL"
+          "PostgreSQL"
         ]
       },
       {
-        "title": "Other",
+        "title": "Testing",
+        "description": "Ensuring reliability and correctness through automated, CI-ready test suites",
+        "skills": [
+          "xUnit",
+          "JUnit",
+          "Playwright"
+        ]
+      },
+      {
+        "title": "DevOps & Tools",
+        "description": "Automating builds, deployments, and developer workflows for smooth delivery",
         "skills": [
           "Git",
-          "CI / CD (Github Actions)",
+          "CI / CD (GitHub Actions)",
           "Android",
-          "iOS",
-          "Gradle",
-          "SSH",
-          "Node.js",
-          "Bash"
+          "iOS"
         ]
       }
     ]
@@ -218,8 +237,8 @@
         "link": "https://enlighteningall.com",
         "bullets": [
           "Optimized 5+ client web apps, improving load times 25% and UI responsiveness with Bootstrap",
-          "Resolved 15+ production issues, cutting client‑reported bugs by 30% and raising uptime to 99.9%",
-          "Delivered 5+ full‑stack PHP/MySQL features on schedule in coordination with project managers"
+          "Resolved 15+ production issues, cutting client-reported bugs by 30% and raising uptime to 99.9%",
+          "Delivered 5+ full-stack PHP/MySQL features on schedule in coordination with project managers"
         ]
       },
       {
