@@ -14,7 +14,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I’ve spent 8+ years building reliable mobile, web, and backend applications using C#/.NET, Kotlin, Swift, TypeScript, and modern frameworks."
+    "description": "I've spent 8+ years building reliable mobile, web, and backend applications using C#/.NET, Kotlin, Swift, TypeScript, and modern frameworks."
   },
   "educations": {
     "title": "Education",
@@ -192,38 +192,51 @@
     "items": [
       {
         "title": "CareerFlow",
-        "description": "An Android application built with Jetpack Compose that provides AI-driven career guidance, resume insights, and role recommendations. Focuses on modern Android architecture and real-world AI integration.",
+        "description": "An Android application that provides AI-driven career guidance, resume insights, and personalized role recommendations.",
+        "tech": ["Kotlin", "Jetpack Compose", "Gemini API"],
         "repo": "https://github.com/iNoles/CareerFlow"
       },
       {
         "title": "Taskify",
-        "description": "A productivity-focused Android app featuring task creation, updates, and offline persistence. Built using modern Android architecture with clean separation of concerns.",
+        "description": "An productivity app for creating, updating, and organizing tasks with support for offline usage.",
+        "tech": ["Kotlin", "Room", "Jetpack Compose", "Koin"],
         "repo": "https://github.com/iNoles/Taskify"
       },
       {
         "title": "TopCoinTrack",
-        "description": "A real-time cryptocurrency tracking app that fetches and displays market data with sorting, error handling, and scalable UI state management.",
+        "description": "A real-time cryptocurrency tracker that displays market data with sorting, error handling, and responsive UI updates.",
+        "tech": ["Kotlin", "Coroutines", "Fuel", "Jetpack Compose", "Room"],
         "repo": "https://github.com/iNoles/TopCoinTrack"
       },
       {
         "title": "HackerNews",
-        "description": "A cross-platform Hacker News client built with .NET MAUI for Android and iOS. Features real-time story updates via Firebase and follows MVVM architecture.",
+        "description": "A cross-platform client for browsing Hacker News stories with real-time content updates.",
+        "tech": [".NET MAUI", "C#", "Firebase Realtime Database", "CommunityToolkit.Mvvm"],
         "repo": "https://github.com/iNoles/HackerNews"
       },
       {
         "title": "SpringTasker",
-        "description": "A RESTful backend service for managing tasks and users. Designed to support mobile or web clients with clean API design and scalable backend architecture.",
+        "description": "A backend service for managing users and tasks through a structured set of RESTful endpoints.",
+        "tech": ["Java", "Spring Boot", "Spring Data JPA", "JWT", "H2 Database"],
         "repo": "https://github.com/iNoles/SpringTasker"
       },
       {
         "title": "ShopShowcase",
-        "description": "A .NET MAUI application integrating with Shopify's Storefront GraphQL API to browse products and manage storefront data across platforms.",
+        "description": "A cross-platform application for browsing products and storefront data using Shopify's Storefront API.",
+        "tech": [".NET MAUI", "C#", "GraphQL", "Shopify Storefront API", "MVVM"],
         "repo": "https://github.com/iNoles/ShopShowcase"
       },
       {
         "title": "BookTracker",
-        "description": "A full-stack ASP.NET Core project for tracking and managing books. Includes authentication, CRUD operations, and REST API endpoints to support mobile or web clients.",
+        "description": "A full-stack application for managing books with authentication, CRUD operations, and API support for external clients.",
+        "tech": ["ASP.NET Core", "C#", "Entity Framework", "SQLite", "Vue 3", "TypeScript", "Tailwind CSS", "xUnit"],
         "repo": "https://github.com/iNoles/BookTracker"
+      },
+      {
+        "title": "Lifeguard Times (Google Play)",
+        "description": "A Jetpack Compose app that provides trending and newsworthy articles related to lifeguards and lifeguarding topics.",
+        "tech": ["Kotlin", "Jetpack Compose", "Firebase"],
+        "repo": "https://play.google.com/store/apps/details?id=com.elifeguard.lifeguardtimes"
       }
     ]
   },

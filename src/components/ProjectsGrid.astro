@@ -1,0 +1,69 @@
+---
+interface Project {
+  title: string;
+  description: string;
+  tech?: string[];
+  repo?: string;
+  date?: string;
+}
+
+interface Props {
+  projects: Project[];
+}
+
+const { projects } = Astro.props;
+
+const linkClass =
+  "hover:underline hover:text-black dark:hover:text-blue-400";
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  {projects.map((project) => (
+    <div class="mb-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md p-6 transition hover:shadow-lg">
+
+      {project.repo ? (
+        <h3 class="font-semibold text-gray-900 dark:text-white pb-1">
+          <a
+            href={project.repo}
+            target="_blank"
+            class={linkClass}
+            aria-label={`${project.title} (opens in a new tab)`}
+          >
+            {project.title}
+          </a>
+        </h3>
+      ) : (
+        <h3 class="font-semibold text-gray-900 dark:text-white pb-1">
+          {project.title}
+        </h3>
+      )}
+
+      {project.date && (
+        <time
+          class="italic text-gray-600 dark:text-gray-300 pb-1 block"
+          datetime={project.date}
+        >
+          {project.date}
+        </time>
+      )}
+
+      <p class="text-md text-gray-600 dark:text-gray-200 font-light mb-4">
+        {project.description}
+      </p>
+
+      {project.tech && project.tech.length > 0 && (
+        <div class="flex flex-wrap gap-2 mt-2">
+          {project.tech.map((item) => (
+            <span
+              class="inline-block bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full
+                     dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+      )}
+
+    </div>
+  ))}
+</div>
