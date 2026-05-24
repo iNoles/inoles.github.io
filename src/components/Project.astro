@@ -1,33 +1,9 @@
 ---
 import Section from './Section.astro';
-import SummaryItem from './SummaryItem.astro';
+import ProjectsGrid from './ProjectsGrid.astro';
 import { t } from '../utils/i18n.ts';
-
-interface Projects {
-  title: string;
-  description: string;
-  repo: string;
-}
-
-const projects = t('projects.items') as Projects[];
 ---
 
 <Section title={t('projects.title')}>
-   {projects.map((project) => (
-    <SummaryItem
-      name={project.title}
-      description={project.description}
-      link={project.repo}
-    />
-  ))}
-  <SummaryItem
-    name="Lifeguard Times (Google Play)"
-    description="A Jetpack Compose app for Lifeguard Times to allow readers trending and newsworthy articles related to lifeguards and lifeguarding-related topics"
-    link="https://play.google.com/store/apps/details?id=com.elifeguard.lifeguardtimes&hl=en_US&pli=1"
-  />
-  <SummaryItem
-    name="Lifeguard Times (App Store)"
-    description="A SwiftUI app for Lifeguard Times to allow readers trending and newsworthy articles related to lifeguards and lifeguarding-related topics"
-    link="https://apps.apple.com/us/app/lifeguard-times/id1130306650"
-  />
+  <ProjectsGrid projects={t('projects.items')} />
 </Section>
