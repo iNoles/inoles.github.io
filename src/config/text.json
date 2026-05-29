@@ -154,11 +154,11 @@
         "tech": ["React", "TypeScript", "Bootstrap", "Bun", "Supabase"]
       },
       {
-        "title": "SpaceXLaunchBlazor",
+        "title": "SpaceX Launch Tracker",
         "description": "A Blazor Server web app that consumes public APIs to display and explore SpaceX launch data with a clean, focused UI.",
         "url": "https://spacexlaunch.tryasp.net/",
-        "repo": "https://github.com/iNoles/SpaceXLaunchBlazor",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/SpaceXLaunchBlazor/refs/heads/main/spacex.png",
+        "repo": "https://github.com/iNoles/spacex-launch-tracker",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/spacex-launch-tracker/refs/heads/main/spacex.png",
         "tech": ["C#", "Blazor Server", "ASP.NET Core", "Public APIs", "Tailwind CSS"]
       },
       {
@@ -166,7 +166,7 @@
         "description": "A responsive dashboard that displays live cryptocurrency prices, 24-hour changes, and interactive chart views. Designed with extensibility in mind to support multiple data domains.",
         "url": "https://inoles.github.io/livepulse-dashboard/",
         "repo": "https://github.com/iNoles/livepulse-dashboard",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/coinkick/refs/heads/main/cypto.png",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/livepulse-dashboard/refs/heads/main/cypto.png",
         "tech": ["React", "Vue", "JavaScript", "Tailwind CSS", "Chart.js"]
       },
       {
@@ -174,7 +174,7 @@
         "description": "A responsive movie discovery website that allows users to search, browse, and explore movie details through an intuitive, visually rich interface.",
         "url": "https://inoles.github.io/movie-discovery-app/",
         "repo": "https://github.com/iNoles/movie-discovery-app",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/MovieExplorer/refs/heads/main/screenshots/main.png",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/movie-discovery-app/refs/heads/main/screenshots/main.png",
         "tech": ["Vue.js", "TypeScript", "Tailwind CSS"]
       },
       {
