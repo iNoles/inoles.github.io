@@ -162,10 +162,10 @@
         "tech": ["C#", "Blazor Server", "ASP.NET Core", "Public APIs", "Tailwind CSS"]
       },
       {
-        "title": "Coinkick",
+        "title": "LivePulse Dashboard",
         "description": "A responsive dashboard that displays live cryptocurrency prices, 24-hour changes, and interactive chart views. Designed with extensibility in mind to support multiple data domains.",
-        "url": "https://inoles.github.io/coinkick/",
-        "repo": "https://github.com/iNoles/coinkick",
+        "url": "https://inoles.github.io/livepulse-dashboard/",
+        "repo": "https://github.com/iNoles/livepulse-dashboard",
         "thumbnail": "https://raw.githubusercontent.com/iNoles/coinkick/refs/heads/main/cypto.png",
         "tech": ["React", "Vue", "JavaScript", "Tailwind CSS", "Chart.js"]
       },
