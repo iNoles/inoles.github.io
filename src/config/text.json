@@ -154,27 +154,27 @@
         "tech": ["React", "TypeScript", "Bootstrap", "Bun", "Supabase"]
       },
       {
-        "title": "SpaceXLaunchBlazor",
+        "title": "SpaceX Launch Tracker",
         "description": "A Blazor Server web app that consumes public APIs to display and explore SpaceX launch data with a clean, focused UI.",
         "url": "https://spacexlaunch.tryasp.net/",
-        "repo": "https://github.com/iNoles/SpaceXLaunchBlazor",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/SpaceXLaunchBlazor/refs/heads/main/spacex.png",
+        "repo": "https://github.com/iNoles/spacex-launch-tracker",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/spacex-launch-tracker/refs/heads/main/spacex.png",
         "tech": ["C#", "Blazor Server", "ASP.NET Core", "Public APIs", "Tailwind CSS"]
       },
       {
-        "title": "Coinkick",
+        "title": "LivePulse Dashboard",
         "description": "A responsive dashboard that displays live cryptocurrency prices, 24-hour changes, and interactive chart views. Designed with extensibility in mind to support multiple data domains.",
-        "url": "https://inoles.github.io/coinkick/",
-        "repo": "https://github.com/iNoles/coinkick",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/coinkick/refs/heads/main/cypto.png",
+        "url": "https://inoles.github.io/livepulse-dashboard/",
+        "repo": "https://github.com/iNoles/livepulse-dashboard",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/livepulse-dashboard/refs/heads/main/cypto.png",
         "tech": ["React", "Vue", "JavaScript", "Tailwind CSS", "Chart.js"]
       },
       {
-        "title": "MovieExplorer",
+        "title": "Movie Discovery App",
         "description": "A responsive movie discovery website that allows users to search, browse, and explore movie details through an intuitive, visually rich interface.",
-        "url": "https://inoles.github.io/MovieExplorer/",
-        "repo": "https://github.com/iNoles/MovieExplorer",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/MovieExplorer/refs/heads/main/screenshots/main.png",
+        "url": "https://inoles.github.io/movie-discovery-app/",
+        "repo": "https://github.com/iNoles/movie-discovery-app",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/movie-discovery-app/refs/heads/main/screenshots/main.png",
         "tech": ["Vue.js", "TypeScript", "Tailwind CSS"]
       },
       {
@@ -197,10 +197,10 @@
         "repo": "https://github.com/iNoles/CareerFlow"
       },
       {
-        "title": "Taskify",
+        "title": "Task Management System",
         "description": "An offline‑first task manager with reliable Room persistence and clean state handling.",
         "tech": ["Kotlin", "Room", "Jetpack Compose", "Koin"],
-        "repo": "https://github.com/iNoles/Taskify"
+        "repo": "https://github.com/iNoles/task-management-system"
       },
       {
         "title": "TopCoinTrack",
