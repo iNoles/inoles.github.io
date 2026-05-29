@@ -170,10 +170,10 @@
         "tech": ["React", "Vue", "JavaScript", "Tailwind CSS", "Chart.js"]
       },
       {
-        "title": "MovieExplorer",
+        "title": "Movie Discovery App",
         "description": "A responsive movie discovery website that allows users to search, browse, and explore movie details through an intuitive, visually rich interface.",
-        "url": "https://inoles.github.io/MovieExplorer/",
-        "repo": "https://github.com/iNoles/MovieExplorer",
+        "url": "https://inoles.github.io/movie-discovery-app/",
+        "repo": "https://github.com/iNoles/movie-discovery-app",
         "thumbnail": "https://raw.githubusercontent.com/iNoles/MovieExplorer/refs/heads/main/screenshots/main.png",
         "tech": ["Vue.js", "TypeScript", "Tailwind CSS"]
       },
