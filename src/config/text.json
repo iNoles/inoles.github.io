@@ -197,10 +197,10 @@
         "repo": "https://github.com/iNoles/CareerFlow"
       },
       {
-        "title": "Taskify",
+        "title": "Task Management System",
         "description": "An offline‑first task manager with reliable Room persistence and clean state handling.",
         "tech": ["Kotlin", "Room", "Jetpack Compose", "Koin"],
-        "repo": "https://github.com/iNoles/Taskify"
+        "repo": "https://github.com/iNoles/task-management-system"
       },
       {
         "title": "TopCoinTrack",
