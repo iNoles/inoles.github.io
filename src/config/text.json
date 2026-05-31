@@ -203,10 +203,10 @@
         "repo": "https://github.com/iNoles/task-management-system"
       },
       {
-        "title": "TopCoinTrack",
-        "description": "A real‑time crypto tracker with an error‑resilient API layer and smooth, incremental UI updates.",
-        "tech": ["Kotlin", "Coroutines", "Fuel", "Jetpack Compose", "Room"],
-        "repo": "https://github.com/iNoles/TopCoinTrack"
+        "title": "CoinCanvas",
+        "description": "A Compose Multiplatform crypto dashboard with a custom expressive design system, real‑time market data, and full support for Android, iOS, Web, and Desktop.",
+        "tech": ["Kotlin", "Compose Multiplatform", "Coroutines", "Ktor", "Material 3 Expressive"],
+        "repo": "https://github.com/iNoles/CoinCanvas"
       },
       {
         "title": "HackerNews",
