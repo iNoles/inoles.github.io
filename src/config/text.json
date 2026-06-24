@@ -154,27 +154,27 @@
         "tech": ["React", "TypeScript", "Bootstrap", "Bun", "Supabase"]
       },
       {
-        "title": "SpaceXLaunchBlazor",
+        "title": "SpaceX Launch Tracker",
         "description": "A Blazor Server web app that consumes public APIs to display and explore SpaceX launch data with a clean, focused UI.",
         "url": "https://spacexlaunch.tryasp.net/",
-        "repo": "https://github.com/iNoles/SpaceXLaunchBlazor",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/SpaceXLaunchBlazor/refs/heads/main/spacex.png",
+        "repo": "https://github.com/iNoles/spacex-launch-tracker",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/spacex-launch-tracker/refs/heads/main/spacex.png",
         "tech": ["C#", "Blazor Server", "ASP.NET Core", "Public APIs", "Tailwind CSS"]
       },
       {
-        "title": "Coinkick",
+        "title": "LivePulse Dashboard",
         "description": "A responsive dashboard that displays live cryptocurrency prices, 24-hour changes, and interactive chart views. Designed with extensibility in mind to support multiple data domains.",
-        "url": "https://inoles.github.io/coinkick/",
-        "repo": "https://github.com/iNoles/coinkick",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/coinkick/refs/heads/main/cypto.png",
+        "url": "https://inoles.github.io/livepulse-dashboard/",
+        "repo": "https://github.com/iNoles/livepulse-dashboard",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/livepulse-dashboard/refs/heads/main/cypto.png",
         "tech": ["React", "Vue", "JavaScript", "Tailwind CSS", "Chart.js"]
       },
       {
-        "title": "MovieExplorer",
+        "title": "Movie Discovery App",
         "description": "A responsive movie discovery website that allows users to search, browse, and explore movie details through an intuitive, visually rich interface.",
-        "url": "https://inoles.github.io/MovieExplorer/",
-        "repo": "https://github.com/iNoles/MovieExplorer",
-        "thumbnail": "https://raw.githubusercontent.com/iNoles/MovieExplorer/refs/heads/main/screenshots/main.png",
+        "url": "https://inoles.github.io/movie-discovery-app/",
+        "repo": "https://github.com/iNoles/movie-discovery-app",
+        "thumbnail": "https://raw.githubusercontent.com/iNoles/movie-discovery-app/refs/heads/main/screenshots/main.png",
         "tech": ["Vue.js", "TypeScript", "Tailwind CSS"]
       },
       {
@@ -192,50 +192,50 @@
     "items": [
       {
         "title": "CareerFlow",
-        "description": "An Android application that provides AI-driven career guidance, resume insights, and personalized role recommendations.",
+        "description": "AI‑driven career guidance using a modular Compose architecture with fast, on‑device role‑fit analysis.",
         "tech": ["Kotlin", "Jetpack Compose", "Gemini API"],
         "repo": "https://github.com/iNoles/CareerFlow"
       },
       {
-        "title": "Taskify",
-        "description": "An productivity app for creating, updating, and organizing tasks with support for offline usage.",
+        "title": "Task Management System",
+        "description": "An offline‑first task manager with reliable Room persistence and clean state handling.",
         "tech": ["Kotlin", "Room", "Jetpack Compose", "Koin"],
-        "repo": "https://github.com/iNoles/Taskify"
+        "repo": "https://github.com/iNoles/task-management-system"
       },
       {
-        "title": "TopCoinTrack",
-        "description": "A real-time cryptocurrency tracker that displays market data with sorting, error handling, and responsive UI updates.",
-        "tech": ["Kotlin", "Coroutines", "Fuel", "Jetpack Compose", "Room"],
-        "repo": "https://github.com/iNoles/TopCoinTrack"
+        "title": "CoinCanvas",
+        "description": "A Compose Multiplatform crypto dashboard with a custom expressive design system, real‑time market data, and full support for Android, iOS, Web, and Desktop.",
+        "tech": ["Kotlin", "Compose Multiplatform", "Coroutines", "Ktor", "Material 3 Expressive"],
+        "repo": "https://github.com/iNoles/CoinCanvas"
       },
       {
         "title": "HackerNews",
-        "description": "A cross-platform client for browsing Hacker News stories with real-time content updates.",
+        "description": "A cross‑platform HN client using async LINQ over IAsyncEnumerable to stream Firebase updates via MVVM.",
         "tech": [".NET MAUI", "C#", "Firebase Realtime Database", "CommunityToolkit.Mvvm"],
         "repo": "https://github.com/iNoles/HackerNews"
       },
       {
         "title": "SpringTasker",
-        "description": "A backend service for managing users and tasks through a structured set of RESTful endpoints.",
+        "description": "A REST API with JWT auth, role‑based access, and a clean, layered service architecture.",
         "tech": ["Java", "Spring Boot", "Spring Data JPA", "JWT", "H2 Database"],
         "repo": "https://github.com/iNoles/SpringTasker"
       },
       {
         "title": "ShopShowcase",
-        "description": "A cross-platform application for browsing products and storefront data using Shopify's Storefront API.",
+        "description": "A storefront browser powered by typed GraphQL, efficient caching, and a modular MAUI MVVM setup.",
         "tech": [".NET MAUI", "C#", "GraphQL", "Shopify Storefront API", "MVVM"],
         "repo": "https://github.com/iNoles/ShopShowcase"
       },
       {
         "title": "BookTracker",
-        "description": "A full-stack application for managing books with authentication, CRUD operations, and API support for external clients.",
+        "description": "A full‑stack book manager with secure auth, structured CRUD flows, and a modern Vue 3 UI.",
         "tech": ["ASP.NET Core", "C#", "Entity Framework", "SQLite", "Vue 3", "TypeScript", "Tailwind CSS", "xUnit"],
         "repo": "https://github.com/iNoles/BookTracker"
       },
       {
         "title": "Lifeguard Times (Google Play)",
-        "description": "A Jetpack Compose app that provides trending and newsworthy articles related to lifeguards and lifeguarding topics.",
-        "tech": ["Kotlin", "Jetpack Compose", "Firebase"],
+        "description": "A Jetpack Compose app that surfaces trending lifeguard stories with an offline‑ready reading experience and a simple way to share your own.",
+        "tech": ["Kotlin", "Jetpack Compose", "Room", "Firebase"],
         "repo": "https://play.google.com/store/apps/details?id=com.elifeguard.lifeguardtimes"
       }
     ]
