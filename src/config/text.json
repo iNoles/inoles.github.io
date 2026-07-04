@@ -31,6 +31,17 @@
           "Web Applications Programming"
         ]
       },
+      },
+      {
+        "name": "Eastern Florida State College",
+        "date": "Graduated Dec 2022",
+        "description": "Associate of Arts",
+        "coursework": [
+          "College Algebra",
+          "Precalculus Algebra",
+          "Calculus 1 With Analytics"
+        ]
+      },
       {
         "name": "Brevard Community College (now Eastern Florida State College)",
         "date": "Graduated May 2015",
