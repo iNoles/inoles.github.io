@@ -14,7 +14,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I've spent 8+ years building reliable mobile, web, and backend applications using C#/.NET, Kotlin, Swift, TypeScript, and modern frameworks."
+    "description": "I build reliable, scalable applications across web, mobile, and backend platforms, focusing on clear architecture, maintainable code, and solutions that perform consistently in real‑world environments. My work spans cross‑platform development, backend systems, and modern frontend frameworks, emphasizing performance, structure, and long‑term stability. I prioritize clarity, consistency, and thoughtful design, continually refining my approach to deliver software that meets both technical and user‑focused goals."
   },
   "educations": {
     "title": "Education",
@@ -86,15 +86,11 @@
         "description": "Designing reliable, scalable, and high-performance backend systems across multiple platforms",
         "skills": [
           ".NET Core",
-          ".NET MAUI",
           "ASP.NET Core",
           "RESTful APIs",
-          "GraphQL",
-          "Node.js",
-          "Bash",
-          "SSH",
-          "Gradle",
-          "Linux"
+          ".NET MAUI",
+          "Kotlin Multiplatform",
+          "Flutter"
         ]
       },
       {
@@ -139,7 +135,13 @@
           "Git",
           "CI / CD (GitHub Actions)",
           "Android",
-          "iOS"
+          "iOS",
+          "Gradle",
+          "GraphQL",
+          "Node.js",
+          "Bash",
+          "SSH",
+          "Linux"
         ]
       }
     ]
