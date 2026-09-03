@@ -297,9 +297,8 @@
         "date": "July 2015 - October 2015",
         "description": "QA Engineer Intern",
         "bullets": [
-          "Automated data validation using 10 Shell scripts for regression testing",
-          "Developed and executed 10+ JCL scripts to support regression testing",
-          "Ensured custom implementations were aligned with main sort processes"
+          "Automated regression data validation using Shell scripts and executed JCL workflows for batch tests",
+          "Verified custom implementations against SORT logic and resolved discrepancies with engineering",
         ],
         "link": "https://www.iri.com"
       },
