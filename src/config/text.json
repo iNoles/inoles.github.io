@@ -272,12 +272,12 @@
         "date": "March 2016 - Jan 2026",
         "description": "Software Engineer",
         "bullets": [
-          "Delivered 5 Android/iOS apps serving 750K+ total users with end-to-end ownership of design, development, testing, and releases",
-          "Modernized mobile apps (Kotlin/Compose, SwiftUI, MVVM), reducing complexity 25%",
-          "Built GitHub Actions and Python automation that eliminated ~80% of manual processes",
-          "Improved product quality with 87% automated test coverage and CI/CD quality gates",
-          "Collaborated with a designer and business stakeholders to refine UX and product requirements",
-          "Enhanced performance and backend workflows by optimizing Magento and WordPress integrations"
+          "Build Android and iOS apps with modern async patterns using Coroutines, Flow, and Combine",
+          "Integrate REST APIs, third‑party SDKs, analytics tools, and push notification systems",
+          "Design offline‑first storage layers with Room, SQLite, and Core Data",
+          "Strengthen maintainability through unit tests, architecture input, and continuous refactoring",
+          "Create Python ETL pipelines and optimize Magento/WordPress backend integrations",
+          "Implement GitHub Actions automation that cut manual work by ~80% and raised test coverage to 87%"
         ],
         "link": "https://elifeguard.com"
       },
@@ -299,7 +299,7 @@
         "description": "QA Engineer Intern",
         "bullets": [
           "Automated regression data validation using Shell scripts and executed JCL workflows for batch tests",
-          "Verified custom implementations against SORT logic and resolved discrepancies with engineering",
+          "Verified custom implementations against SORT logic and resolved discrepancies with engineering"
         ],
         "link": "https://www.iri.com"
       },
