@@ -34,7 +34,7 @@
       {
         "name": "Eastern Florida State College",
         "date": "Graduated Dec 2022",
-        "description": "Associate of Arts",
+        "description": "Associate of Arts in General Studies",
         "coursework": [
           "College Algebra",
           "Precalculus Algebra",
@@ -51,7 +51,10 @@
           "C++ Programming Advanced",
           "C# Programming",
           "Introduction to Java Programming",
-          "Visual Basic Programming"
+          "Visual Basic Programming",
+          "Microcomputer Application",
+          "Introduction to XML",
+          "Network+"
         ]
       }
     ]
@@ -255,6 +258,12 @@
   "experiences": {
     "title": "Experience",
     "history": [
+      {
+        "name": "Melbourne Terrace Rehabilitation Center",
+        "description": "Dietary Aide",
+        "date": "September 2026 - Present",
+        "bullets": []
+      },
       {
         "name": "Fencl Web Design",
         "date": "January 2026 - March 2026",
