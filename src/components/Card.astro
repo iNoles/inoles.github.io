@@ -1,0 +1,58 @@
+---
+import type { Entry } from '../types/entry.ts';
+
+interface Props extends Entry {}
+
+const { title, subtitle, date, description, bullets, tags, href } = Astro.props;
+---
+
+<article class="rounded-xl border border-gray-200 bg-white p-6 shadow-md transition
+                hover:shadow-lg dark:border-gray-700 dark:bg-gray-800">
+  <h3 class="pb-1 font-semibold text-gray-900 dark:text-white">
+    {href ? (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:underline hover:text-black dark:hover:text-blue-400"
+      >
+        {title}
+        <span class="sr-only"> (opens in a new tab)</span>
+      </a>
+    ) : (
+      title
+    )}
+  </h3>
+
+  {(subtitle || date) && (
+    <div class="flex items-center justify-between pb-2 text-base text-gray-700 dark:text-gray-300">
+      {subtitle && <span class="font-medium">{subtitle}</span>}
+      {date && <time class="text-sm italic text-gray-600 dark:text-gray-300">{date}</time>}
+    </div>
+  )}
+
+  <p class="mb-4 text-base text-gray-700 dark:text-gray-300">{description}</p>
+
+  {bullets && bullets.length > 0 && (
+    <ul class="mt-2 space-y-2">
+      {bullets.map((bullet) => (
+        <li class="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+          <span aria-hidden="true"
+                class="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-blue-500 dark:bg-blue-400"></span>
+          <span>{bullet}</span>
+        </li>
+      ))}
+    </ul>
+  )}
+
+  {tags && tags.length > 0 && (
+    <ul class="mt-4 flex flex-wrap gap-2">
+      {tags.map((tag) => (
+        <li class="inline-block rounded-full bg-gray-100 px-3 py-1 text-sm
+                   font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-200">
+          {tag}
+        </li>
+      ))}
+    </ul>
+  )}
+</article>

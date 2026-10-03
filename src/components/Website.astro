@@ -1,23 +1,16 @@
 ---
 import Section from './Section.astro';
-import WebsiteCard from '../components/WebsiteCard.astro';
-import type { Website } from '../components/WebsiteCard.astro';
+import WebsiteCard from './WebsiteCard.astro';
 import { t } from '../utils/i18n.ts';
+import type { Entry } from '../types/entry.ts';
 
-const websites = t('websites.items') as Website[];
+const websites = t('websites.items') as Entry[];
 ---
 
-<Section title={t('websites.title')}>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {websites.map(website => (
-      <WebsiteCard
-        title={website.title}
-        description={website.description}
-        url={website.url}
-        repo={website.repo}
-        thumbnail={website.thumbnail}
-        tech={website.tech}
-      />
+<Section id="live-sites" title={t('websites.title')}>
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+    {websites.map((site) => (
+      <WebsiteCard {...site} />
     ))}
   </div>
 </Section>

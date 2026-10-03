@@ -1,43 +1,77 @@
 ---
-import GoogleAnalytics from '../components/GoogleAnalytics.astro'
+import GoogleAnalytics from '../components/GoogleAnalytics.astro';
 import '../base.css';
 import { Font } from 'astro:assets';
 import { t } from '../utils/i18n.ts';
 
 const author = 'Jonathan Steele';
+const siteUrl = 'https://inoles.github.io';
+const siteImage = `${siteUrl}/site-image.png`;
+const locale = 'en'; // swap for t('meta.locale') if multilingual
+const title = `${author} | ${t('meta.role')}`;
+const description = t('meta.description');
+const canonical = new URL(Astro.url.pathname, Astro.site ?? siteUrl).href;
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: author,
+  url: siteUrl,
+  jobTitle: t('meta.role'),
+  description,
+  image: siteImage,
+  sameAs: [
+    // add your real profile URLs
+    'https://github.com/iNoles',
+  ],
+};
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={locale}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{author} | {t('meta.role')}</title>
-    <meta name="description" content={t('meta.description')} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://inoles.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content={`${author} | ${t('meta.role')}`} />
-    <meta property="og:description" content={t('meta.description')}>
-    <meta property="og:image" content="https://inoles.github.io/site-image.png">
-    
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="inoles.github.io">
-    <meta property="twitter:url" content="https://inoles.github.io/">
-    <meta name="twitter:title" content={`${author} | ${t('meta.role')}`} />
-    <meta name="twitter:description" content={t('meta.description')}>
-    <meta name="twitter:image" content="https://inoles.github.io/site-image.png">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={author} />
+    <meta property="og:locale" content={locale} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={siteImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${author} — ${t('meta.role')}`} />
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={siteImage} />
+    <meta name="twitter:image:alt" content={`${author} — ${t('meta.role')}`} />
+    {t('meta.twitterHandle') && (
+      <meta name="twitter:site" content={t('meta.twitterHandle')} />
+    )}
+
+    <!-- Icons & theme -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content="Astro 6.0.2" />
+    <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
 
+    <!-- Fonts -->
     <Font cssVariable="--font-inter" preload />
+
+    <!-- Structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 
     <GoogleAnalytics measurementId="G-CVE0ZBT5L4" />
   </head>
-  <body>
+  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 antialiased">
     <slot />
   </body>
 </html>

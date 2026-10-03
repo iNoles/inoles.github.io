@@ -1,13 +1,13 @@
 ---
 import Section from './Section.astro';
-import SummaryItem from './SummaryItem.astro';
+import Card from './Card.astro';
 import { t } from '../utils/i18n.ts';
 
 ---
 
 <Section title={t('certifications.title')}>
-  <SummaryItem
-    name={t('certifications.name')}
+  <Card
+    title={t('certifications.name')}
     date={t('certifications.date')}
     description={t('certifications.description')}
   />

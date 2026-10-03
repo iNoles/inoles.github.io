@@ -1,5 +1,6 @@
 {
   "meta": {
+    "author": "Jonathan Steele",
     "role": "Full-Stack Software Engineer | Web, Mobile",
     "description": "Full-Stack Software Engineer specializing in web and mobile applications. Building scalable, user-focused solutions with modern frameworks and clean code."
   },
@@ -14,7 +15,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I build reliable, scalable applications across web, mobile, and backend platforms, focusing on clear architecture, maintainable code, and solutions that perform consistently in real‑world environments. My work spans cross‑platform development, backend systems, and modern frontend frameworks, emphasizing performance, structure, and long‑term stability. I prioritize clarity, consistency, and thoughtful design, continually refining my approach to deliver software that meets both technical and user‑focused goals."
+    "description": "I build applications across web, mobile, and backend platforms, with a focus on clear architecture and code that stays maintainable as systems grow.\n\nI care about software that performs consistently in real conditions, not just on the demo page."
   },
   "educations": {
     "title": "Education",
@@ -259,67 +260,64 @@
     "title": "Experience",
     "history": [
       {
-        "name": "Melbourne Terrace Rehabilitation Center",
-        "description": "Dietary Aide",
-        "date": "September 2026 - Present",
-        "bullets": []
-      },
-      {
         "name": "Fencl Web Design",
         "date": "January 2026 - March 2026",
         "description": "Full-Stack Software Engineer",
         "link": "https://enlighteningall.com",
         "bullets": [
           "Optimized 5+ client web apps, improving load times 25% and UI responsiveness with Bootstrap",
-          "Resolved 15+ production issues, cutting client‑reported bugs by 30% and raising uptime to 99.9%",
-          "Delivered 5+ full‑stack PHP/MySQL features on schedule in coordination with project managers",
-          "Used AI‑assisted development tools to accelerate prototyping, testing, and documentation"
+          "Resolved 15+ production issues, cutting client-reported bugs by 30% and raising uptime to 99.9%",
+          "Delivered 5+ full-stack PHP/MySQL features on schedule in coordination with project managers",
+          "Used AI-assisted development tools to accelerate prototyping, testing, and documentation"
         ]
       },
       {
         "name": "eLifeguard, Inc.",
-        "date": "March 2016 - Jan 2026",
+        "date": "March 2016 - January 2026",
         "description": "Software Engineer",
+        "link": "https://elifeguard.com",
         "bullets": [
-          "Build Android and iOS apps with modern async patterns using Coroutines, Flow, and Combine",
-          "Integrate REST APIs, third‑party SDKs, analytics tools, and push notification systems",
-          "Design offline‑first storage layers with Room, SQLite, and Core Data",
-          "Strengthen maintainability through unit tests, architecture input, and continuous refactoring",
-          "Create Python ETL pipelines and optimize Magento/WordPress backend integrations",
-          "Implement GitHub Actions automation that cut manual work by ~80% and raised test coverage to 87%"
-        ],
-        "link": "https://elifeguard.com"
-      },
-      {
-        "name": "Brevard County Public Schools",
-        "date": "August 2022 - October 2022",
-        "description": "Volunteer IT Support Intern",
-        "bullets": [
-          "Assisted staff and students with hardware/software troubleshooting at one school campus",
-          "Loaded Windows OS images from the network onto 50+ laptops, ensuring consistency and functionality",
-          "Gained hands-on experience with server racks, hardware setup, and basic network configurations",
-          "Supported general IT operations, including device setup and maintenance"
-        ],
-        "link": "https://www.brevardschools.org"
+          "Built and maintained Android and iOS apps with Kotlin Coroutines, Flow, and Swift Combine, including offline-first storage (Room, SQLite, Core Data)",
+          "Integrated REST APIs, third-party SDKs, analytics, and push notifications, plus Python ETL pipelines and Magento/WordPress backend integrations",
+          "Improved code quality and delivery through unit tests, continuous refactoring, and GitHub Actions automation that cut manual work ~80% and raised test coverage to 87%"
+        ]
       },
       {
         "name": "IRI, The CoSort Company",
-        "date": "July 2015 - October 2015",
+        "date": "July 2015 – October 2015",
         "description": "QA Engineer Intern",
+        "link": "https://www.iri.com",
         "bullets": [
           "Automated regression data validation using Shell scripts and executed JCL workflows for batch tests",
           "Verified custom implementations against SORT logic and resolved discrepancies with engineering"
-        ],
-        "link": "https://www.iri.com"
+        ]
+      },
+      {
+        "name": "Brevard County Public Schools",
+        "date": "August 2022 – October 2022",
+        "description": "Volunteer IT Support Intern",
+        "link": "https://www.brevardschools.org",
+        "bullets": [
+          "Assisted staff and students with hardware/software troubleshooting at one school campus",
+          "Loaded Windows OS images from the network onto 50+ laptops, ensuring consistency and functionality",
+          "Gained hands-on experience with server racks, hardware setup, and basic network configurations"
+        ]
       },
       {
         "name": "The Computer Repair Zone",
-        "date": "March 2013 - May 2013",
+        "date": "March 2013 – May 2013",
         "description": "Volunteer Computer Repair Technician",
         "bullets": [
           "Performed hardware diagnostics, repairs, and OS installations on PCs",
-          "Assisted customers with troubleshooting and basic technical support",
-          "Gained foundational hands-on experience that led to a career in software development"
+          "Assisted customers with troubleshooting and basic technical support"
+        ]
+      },
+      {
+        "name": "Melbourne Terrace Rehabilitation Center",
+        "date": "September 2026 – Present",
+        "description": "Dietary Aide",
+        "bullets": [
+          "Support patient care and dietary operations in a rehabilitation facility"
         ]
       }
     ]
