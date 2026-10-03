@@ -1,29 +1,24 @@
 ---
 import Section from './Section.astro';
-import ExperienceItem from './ExperienceItem.astro';
+import Card from './Card.astro';
 import { t } from '../utils/i18n.ts';
-
-interface Experience {
-  name: string;
-  date: string;
-  bullets?: string[];
-  description: string;
-  link?: string;
-}
+import type { Entry } from '../types/entry.ts';
 
 // Pull data from JSON via t()
 const sectionTitle = t('experiences.title');
-const experiences = t('experiences.history') as Experience[];
+const experiences = t('experiences.history') as Entry[];
 ---
 
 <Section title={sectionTitle}>
-  {experiences.map((experience: Experience) => (
-    <ExperienceItem
-      name={experience.name}
-      date={experience.date}
-      bullets={experience.bullets}
-      description={experience.description}
-      link={experience.link}
+<div class="space-y-6">
+  {experiences.map((exp) => (
+    <Card
+      title={exp.title}
+      date={exp.date}
+      bullets={exp.bullets}
+      description={exp.description}
+      link={exp.link}
   />
   ))}
+  </div>
 </Section>

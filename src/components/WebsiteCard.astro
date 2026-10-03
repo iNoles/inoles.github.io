@@ -1,66 +1,81 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
+import type { Website } from '../types/website.ts';
 
-export interface Website {
-  title: string;
-  description: string;
-  url: string;
-  repo: string;
-  thumbnail: string;
-  tech: string[];
-}
-
-const { title, description, url, repo, thumbnail, tech = [] } = Astro.props as Website;
+const {
+  title,
+  description,
+  url,
+  repo,
+  thumbnail,
+  tech = [],
+} = Astro.props as Website;
 ---
-<article class="flex flex-col border rounded-lg shadow-md overflow-hidden hover:shadow-xl transition
-                bg-white dark:bg-gray-800 dark:border-gray-700">
-  
-  {/* Title */}
-  <h3 class="text-xl font-bold p-4 text-gray-800 dark:text-gray-100">
+
+<article class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md
+                transition hover:shadow-xl dark:border-gray-700 dark:bg-gray-800">
+  <h3 class="p-4 text-xl font-bold text-gray-800 dark:text-gray-100">
     {title}
   </h3>
 
-  {/* Thumbnail */}
   {thumbnail && (
-  <Image
-    src={thumbnail}
-    alt={title}
-    width={800}
-    height={450}
-    class="w-full h-48 object-cover"
-    loading="lazy"
-  />
-)}
+    <Image
+      src={thumbnail}
+      alt={`Screenshot of ${title}`}
+      width={800}
+      height={450}
+      widths={[400, 800, 1200]}
+      sizes="(max-width: 768px) 100vw, 400px"
+      class="aspect-video h-48 w-full object-cover"
+      loading="lazy"
+    />
+  )}
 
-{/* Content */}
-<div class="flex flex-col flex-1 p-4">
-  {/* Description */}
-  <p class="text-gray-600 dark:text-gray-300 mb-3 flex-1 text-sm">{description}</p>
+  <div class="flex flex-1 flex-col p-4">
+    <p class="mb-3 flex-1 text-sm text-gray-700 dark:text-gray-300">
+      {description}
+    </p>
 
-  {/* Tech tags */}
-  {tech.length > 0 && (
-    <div class="flex flex-wrap gap-2 mb-4">
-      {tech.map(t => (
-        <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-1 rounded text-xs">{t}</span>
-      ))}
+    {tech.length > 0 && (
+      <ul class="mb-4 flex flex-wrap gap-2">
+        {tech.map((tag) => (
+          <li class="rounded bg-gray-100 px-2 py-1 text-xs text-gray-800
+                     dark:bg-gray-700 dark:text-gray-200">
+            {tag}
+          </li>
+        ))}
+      </ul>
+    )}
+
+    <div class="mt-auto flex flex-col gap-3 sm:flex-row">
+      {url && (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex-1 rounded-xl bg-violet-500 px-6 py-3 text-center font-semibold
+                 !text-white shadow-md shadow-violet-600/30 transition-colors duration-150
+                 hover:bg-violet-700"
+        >
+          Live Demo
+          <span class="sr-only"> for {title} (opens in a new tab)</span>
+        </a>
+      )}
+
+      {repo && (
+        <a
+          href={repo}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex-1 rounded-xl border border-teal-600 px-6 py-3 text-center font-semibold
+                 text-teal-700 shadow-md shadow-teal-600/30 transition-colors duration-150
+                 hover:bg-gray-100 dark:border-teal-400 dark:text-teal-300
+                 dark:hover:bg-gray-600"
+        >
+          GitHub
+          <span class="sr-only"> repository for {title} (opens in a new tab)</span>
+        </a>
+      )}
     </div>
-  )}
-
-  {/* Buttons */}
-  <div class="mt-auto flex gap-3">
-    {/* Live Demo Button (Primary) */}
-    {url && (
-    <a href={url} target="_blank" rel="noopener" aria-label={`Live demo for ${title}`} class="flex-1 text-center rounded-xl px-6 py-3 font-semibold bg-violet-600 !text-white hover:bg-violet-700 transition-colors duration-150 shadow-md shadow-violet-600/30">
-      Live Demo
-    </a>
-  )}
-
-  {/* GitHub Button (Secondary) */}
-  {repo && (
-  <a href={repo} target="_blank" rel="noopener" aria-label={`${title} GitHub Repository`} class="flex-1 text-center py-3 rounded-xl font-semibold border border-teal-600 text-teal-700 transition-colors duration-150 shadow-md shadow-teal-600/30 dark:border-teal-400 dark:text-teal-300 hover:bg-gray-100 dark:hover:bg-gray-600">
-    GitHub
-  </a>
-  )}
-</div>
-</div>
+  </div>
 </article>

@@ -2,73 +2,112 @@
 import { Image } from 'astro:assets';
 import { t } from '../utils/i18n.ts';
 import profile from '../../public/images/profile.jpg';
-import Typewriter from "astro-typewriter";
+import Typewriter from 'astro-typewriter';
+
+const socials = [
+  { href: 'https://github.com/inoles', label: 'GitHub', icon: 'github' },
+  {
+    href: 'https://www.linkedin.com/in/jonathan-steele-dev/',
+    label: 'LinkedIn',
+    icon: 'linkedin',
+  },
+  {
+    href: 'https://docs.google.com/document/d/1SJ2DIJDTYp_VTqL21_DZoIIEk0ZF2qLv9j462PdS2bY/edit?usp=sharing',
+    label: 'Resume',
+    icon: null,
+  },
+];
+
+const buttonBase =
+  'inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 ' +
+  'text-xs font-semibold uppercase tracking-wider text-gray-800 ' +
+  'dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100';
+
+const buttonInteractive =
+  'transition-colors duration-150 hover:border-gray-500 hover:bg-gray-100 ' +
+  'dark:hover:border-gray-500 dark:hover:bg-gray-600';
+
+const buttonClass = `${buttonBase} ${buttonInteractive}`;
+
+const chipClass =
+  'inline-flex items-center rounded-md border border-gray-200 bg-gray-50 px-4 py-2 ' +
+  'text-xs font-semibold uppercase tracking-wider text-gray-600 ' +
+  'dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400';
 ---
 
-<header class="custom-header block mb-6 md:flex bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md rounded-2xl p-6 md:p-8 transition-colors duration-300">
-  <div class="w-full max-w-37 flex-shrink-0">
+<header class="custom-header mb-6 block rounded-2xl border border-gray-200 bg-white p-8 shadow-md
+               transition-colors duration-300 md:flex md:items-center
+               dark:border-gray-700 dark:bg-gray-800">
+  <div class="flex-shrink-0">
     <Image
       src={profile}
-      alt="A man with glasses and a white shirt poses in front of a palm tree, enjoying a sunny day outdoors."
+      alt="Jonathan Steele, a man with glasses and a white shirt, standing outdoors in front of a palm tree."
       widths={[120, 150, 300]}
       sizes="(max-width: 640px) 120px, 150px"
-      class="w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] rounded-full transform transition-transform duration-150 hover:scale-105"
+      class="h-[120px] w-[120px] rounded-full transition-transform duration-150 hover:scale-105
+             sm:h-[150px] sm:w-[150px]"
       loading="eager"
     />
   </div>
-  <div class="flex-none pt-6 md:pt-1 md:flex-1 md:pl-8">
-    <h1 class="text-5xl font-bold text-gray-900 dark:text-gray-100 transition-colors duration-200">Jonathan Steele</h1>
-    <p class="opacity-80 mt-2 text-gray-700 dark:text-gray-300">
+
+  <div class="pt-6 md:flex-1 md:pt-0 md:pl-8">
+    <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl dark:text-purple-300">
+      Jonathan Steele
+    </h1>
+
+    <p class="mt-2 min-h-[1.75rem] text-gray-700 opacity-80 dark:text-gray-300">
       <Typewriter
         messages={[
           t('header.animated.first'),
           t('header.animated.second'),
           t('header.animated.third'),
           t('header.animated.fourth'),
-          t('header.animated.fifth')
+          t('header.animated.fifth'),
         ]}
-        writeSpeed={80}    
-        deleteSpeed={40}   
-        waitWritten={2500} 
+        writeSpeed={80}
+        deleteSpeed={40}
+        waitWritten={2500}
         waitDeleted={500}
       />
-
     </p>
-    <ul class="mt-6 flex gap-4 flex-wrap">
-      {[
-        { href: `https://github.com/inoles`, label: "GitHub", icon: "github" },
-        { href: `https://www.linkedin.com/in/jonathan-steele-dev/`, label: "LinkedIn", icon: "linkedin" },
-        { href: "https://docs.google.com/document/d/1SJ2DIJDTYp_VTqL21_DZoIIEk0ZF2qLv9j462PdS2bY/edit?usp=sharing", label: "Resume", icon: null }
-      ].map(({ href, label, icon }) => (
-        <li>
-          <a
-            class="inline-flex items-center px-4 py-2 text-xs font-semibold uppercase tracking-wider border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-600 hover:border-gray-500 dark:hover:border-gray-500 transition-colors duration-150"
-            href={href}
-            aria-label={label === "GitHub" ? "Jonathan Steele GitHub profile" : label}
-          >
-            {icon === "github" && (
-              <svg aria-hidden="true" class="lucide lucide-github mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                <path d="M9 18c-4.51 2-5-2-7-2"></path>
-              </svg>
-            )}
-            {icon === "linkedin" && (
-              <svg aria-hidden="true" class="lucide lucide-linkedin mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect width="4" height="12" x="2" y="9"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            )}
-            <span>{label}</span>
-          </a>
-        </li>
-      ))}
-      <li><span
-        class="inline-flex items-center px-4 py-2 text-xs font-semibold uppercase tracking-wider border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-600 hover:border-gray-500 dark:hover:border-gray-500 transition-colors duration-150 cursor-pointer select-none"
-        role="button"
-      >
-      Melbourne, Florida
-    </span></li>
-    </ul>
+
+    <div class="mt-6 flex flex-wrap items-center gap-4">
+      <ul class="flex flex-wrap gap-4">
+        {socials.map(({ href, label, icon }) => (
+          <li>
+            <a class={buttonClass} href={href} target="_blank" rel="noopener noreferrer">
+              {icon === 'github' && (
+                <svg class="mr-2 h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+              )}
+              {icon === 'linkedin' && (
+                <svg class="mr-2 h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              )}
+              <span>{label}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <span class={chipClass}>
+        <svg class="mr-2 h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        Melbourne, Florida
+      </span>
+    </div>
   </div>
 </header>

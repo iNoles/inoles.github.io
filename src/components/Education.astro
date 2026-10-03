@@ -1,6 +1,6 @@
 ---
 import Section from './Section.astro';
-import EducationItems from './EducationItems.astro';
+import Card from './Card.astro';
 import { t } from '../utils/i18n.ts';
 
 // Pull section title and array from JSON
@@ -14,5 +14,14 @@ const sections = t('educations.history') as Array<{
 ---
 
 <Section title={sectionTitle}>
-  <EducationItems sections={sections} />
+<div class="space-y-6">
+  {sections.map((education) => (
+    <Card
+      title={education.name}
+      date={education.date}
+      description={education.description}
+      tags={education.coursework}
+  />
+  ))}
+  </div>
 </Section>

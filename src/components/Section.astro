@@ -1,17 +1,18 @@
 ---
 interface Props {
+  id?: string;
   title: string;
 }
 
-const { title } = Astro.props;
-
+const { id, title } = Astro.props;
 ---
 
-<div class="block pt-12 md:flex">
-  <div class="pb-6 md:w-full md:max-w-37 md:p-0">
-    <h2 class="text-2xl font-bold leading-snug tracking-wide uppercase text-gray-800 dark:text-[#C3A6E1]">{title}</h2>
-  </div>
-  <div class="flex-none text-lg text-gray-600 dark:text-gray-200 font-light md:flex-1 md:pl-20">
+<section id={id} class="scroll-mt-20 py-12 md:grid md:grid-cols-[14rem_1fr] md:gap-8">
+  <h2 class="mb-6 text-2xl font-bold uppercase leading-snug tracking-wide text-gray-800
+             md:sticky md:top-24 md:mb-0 md:self-start dark:text-purple-300">
+    {title}
+  </h2>
+  <div class="min-w-0">
     <slot />
   </div>
-</div>
+</section>

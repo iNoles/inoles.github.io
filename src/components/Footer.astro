@@ -1,15 +1,18 @@
 ---
 import { t } from '../utils/i18n.ts';
+
 const currentYear = new Date().getFullYear();
+const author = t('meta.author');
 ---
-<footer class="bg-gray-800 text-white py-4 mt-8">
-  <div class="container mx-auto text-center space-y-1">
-    <p>&copy; {currentYear} Jonathan Steele. {t('footer.text')}</p>
-    <p>{t('footer.builtWith')}</p>
-    <p>
-      <a 
-        href="LICENSE.txt" 
-        class="!text-teal-300 dark:text-teal-300 underline hover:opacity-90"
+
+<footer class="mt-8 bg-gray-800 py-6 text-white dark:bg-gray-950">
+  <div class="mx-auto w-full max-w-5xl space-y-1 px-6 text-center sm:px-8 lg:px-12">
+    <p class="text-sm">&copy; {currentYear} {author}. {t('footer.text')}</p>
+    <p class="text-sm text-gray-300">{t('footer.builtWith')}</p>
+    <p class="text-sm">
+      <a
+        href="/LICENSE.txt"
+        class="text-teal-300 underline hover:opacity-90"
       >
         {t('footer.license')}
       </a>

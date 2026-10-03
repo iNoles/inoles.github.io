@@ -12,5 +12,5 @@ export default defineConfig({
     name: "Inter",
     cssVariable: "--font-inter",
   }],
-  integrations: [partytown({ config: { forward: ["dataLayer.push"] } })],
+  integrations: [partytown({ config: { forward: ["dataLayer.push", "gtag"] } })],
 });

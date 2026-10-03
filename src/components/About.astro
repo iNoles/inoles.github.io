@@ -1,15 +1,18 @@
 ---
 import Section from './Section.astro';
 import { t } from '../utils/i18n.ts';
+
+// If description has multiple paragraphs, keep them structured
+const paragraphs = t('about.description').split('\n\n');
 ---
 
-<Section title={t('about.title')}>
+<Section id="about" title={t('about.title')}>
   <div
-    class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 
-           rounded-2xl shadow-md p-6 transition hover:shadow-lg"
+    class="rounded-2xl border border-gray-200 bg-white p-6 shadow-md transition
+           hover:shadow-lg dark:border-gray-700 dark:bg-gray-800"
   >
-    <div style="white-space: pre-line;">
-      <p>{t('about.description')}</p>
+    <div class="space-y-3 text-gray-700 dark:text-gray-300">
+      {paragraphs.map(p => <p>{p}</p>)}
     </div>
   </div>
 </Section>
