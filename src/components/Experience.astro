@@ -13,11 +13,11 @@ const experiences = t('experiences.history') as Entry[];
 <div class="space-y-6">
   {experiences.map((exp) => (
     <Card
-      title={exp.name}
+      title={exp.title}
       date={exp.date}
       bullets={exp.bullets}
       description={exp.description}
-      href={exp.link}
+      link={exp.link}
   />
   ))}
   </div>

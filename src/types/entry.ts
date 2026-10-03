@@ -5,6 +5,5 @@ export interface Entry {
   description: string;
   bullets?: string[];     // experience bullets
   tags?: string[];        // tech stack, coursework, skills
-  href?: string;          // repo, live site, external link
-  hrefLabel?: string;     // "Source", "Visit", "View" — defaults to "Link"
+  link?: string;          // repo, live site, external link
 }
