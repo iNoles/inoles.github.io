@@ -260,7 +260,7 @@
     "title": "Experience",
     "history": [
       {
-        "name": "Fencl Web Design",
+        "title": "Fencl Web Design",
         "date": "January 2026 - March 2026",
         "description": "Full-Stack Software Engineer",
         "link": "https://enlighteningall.com",
@@ -272,7 +272,7 @@
         ]
       },
       {
-        "name": "eLifeguard, Inc.",
+        "title": "eLifeguard, Inc.",
         "date": "March 2016 - January 2026",
         "description": "Software Engineer",
         "link": "https://elifeguard.com",
@@ -283,7 +283,7 @@
         ]
       },
       {
-        "name": "IRI, The CoSort Company",
+        "title": "IRI, The CoSort Company",
         "date": "July 2015 – October 2015",
         "description": "QA Engineer Intern",
         "link": "https://www.iri.com",
@@ -293,7 +293,7 @@
         ]
       },
       {
-        "name": "Brevard County Public Schools",
+        "title": "Brevard County Public Schools",
         "date": "August 2022 – October 2022",
         "description": "Volunteer IT Support Intern",
         "link": "https://www.brevardschools.org",
@@ -304,7 +304,7 @@
         ]
       },
       {
-        "name": "The Computer Repair Zone",
+        "title": "The Computer Repair Zone",
         "date": "March 2013 – May 2013",
         "description": "Volunteer Computer Repair Technician",
         "bullets": [
@@ -313,7 +313,7 @@
         ]
       },
       {
-        "name": "Melbourne Terrace Rehabilitation Center",
+        "title": "Melbourne Terrace Rehabilitation Center",
         "date": "September 2026 – Present",
         "description": "Dietary Aide",
         "bullets": [
