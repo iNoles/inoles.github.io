@@ -6,7 +6,7 @@
   },
   "header": {
     "animated": {
-      "first": "Full Stack Software Engineer",
+      "first": "Full Stack Software Developer",
       "second": "Mobile Developer",
       "third": "Web Developer",
       "fourth": "Problem Solver",
@@ -262,7 +262,7 @@
       {
         "title": "Fencl Web Design",
         "date": "January 2026 - March 2026",
-        "description": "Full-Stack Software Engineer",
+        "description": "Full-Stack Software Developer",
         "link": "https://enlighteningall.com",
         "bullets": [
           "Optimized 5+ client web apps, improving load times 25% and UI responsiveness with Bootstrap",
@@ -274,7 +274,7 @@
       {
         "title": "eLifeguard, Inc.",
         "date": "March 2016 - January 2026",
-        "description": "Software Engineer",
+        "description": "Software Developer",
         "link": "https://elifeguard.com",
         "bullets": [
           "Built and maintained Android and iOS apps with Kotlin Coroutines, Flow, and Swift Combine, including offline-first storage (Room, SQLite, Core Data)",
